@@ -103,6 +103,25 @@ export const WEEKS = [
   { week:50, dates:"Dec 27–Jan 2", topic:"Messiah" },
 ];
 
+export function mergeState(
+  local: import('./types').AppState,
+  remote: import('./types').AppState,
+): import('./types').AppState {
+  const done = { ...local.done };
+  for (const [k, v] of Object.entries(remote.done ?? {})) {
+    if (v) done[k] = true;
+  }
+  const bm = { ...local.bm };
+  for (const [k, v] of Object.entries(remote.bm ?? {})) {
+    if (v) bm[k] = true;
+  }
+  const notes = { ...local.notes };
+  for (const [k, v] of Object.entries(remote.notes ?? {})) {
+    if (v && (!notes[k] || v.length > notes[k].length)) notes[k] = v;
+  }
+  return { done, bm, notes };
+}
+
 const STATE_KEY = 'btl-state';
 
 export function loadState(): Partial<import('./types').AppState> {
