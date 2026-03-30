@@ -95,8 +95,16 @@ function uniqueChapters(refs) {
  * Strip HTML tags, study-note references, and clean up verse text.
  */
 function cleanVerseText(html) {
-  // Remove study-note anchor tags entirely (including their content — footnote markers)
-  let text = html.replace(/<a[^>]*class="[^"]*study-note-ref[^"]*"[^>]*>.*?<\/a>/gi, '');
+  // For study-note anchors: remove the <sup> footnote markers but KEEP the scripture words
+  // HTML structure: <a class="study-note-ref" href="..."><sup class="marker">a </sup>common hall</a>
+  // We want to keep "common hall" but remove the <sup>a </sup> and the wrapping <a>
+  let text = html;
+
+  // First, remove all <sup> tags and their content (footnote markers like "a ", "b ")
+  text = text.replace(/<sup[^>]*>.*?<\/sup>/gi, '');
+
+  // Now unwrap study-note anchors (keep inner text, remove <a> tags)
+  text = text.replace(/<a[^>]*class="[^"]*study-note-ref[^"]*"[^>]*>(.*?)<\/a>/gi, '$1');
 
   // Handle clarity-word spans: keep text but wrap in [italics]
   text = text.replace(/<span[^>]*class="[^"]*clarity-word[^"]*"[^>]*>(.*?)<\/span>/gi, '[italics]$1[/italics]');
