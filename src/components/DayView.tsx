@@ -1,10 +1,34 @@
 import { useState, useCallback } from 'react';
 import type { AppState, WeekContent, ScriptureRef } from '../types';
-import { DAYS, WEEKS, scrUrl, refLabel } from '../utils';
+import { DAYS, WEEKS, scrUrl, refLabel, refStringToUrl } from '../utils';
 import { getVerses, type VerseEntry } from '../scripture-lookup';
 import Sec from './Sec';
 import Synth from './Synth';
 import { content } from '../content';
+
+/** Parse a weekScriptures string into clickable links */
+function renderWeekScriptures(text: string) {
+  // Split on semicolons, trim each ref, and make it a link
+  const refs = text.split(';').map(s => s.trim()).filter(Boolean);
+  return refs.map((ref, i) => {
+    const url = refStringToUrl(ref);
+    return (
+      <span key={i}>
+        {i > 0 && <span style={{ color: 'var(--gold)' }}>{'; '}</span>}
+        {url ? (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'var(--stone)', textDecoration: 'none', borderBottom: '1px dotted var(--gold)' }}
+          >
+            {ref}
+          </a>
+        ) : ref}
+      </span>
+    );
+  });
+}
 
 /** Render verse text, converting [italics]...[/italics] to <i> elements */
 function renderVerseText(text: string) {
@@ -241,7 +265,7 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
       {c.weekScriptures && (
         <div style={{ marginTop: '1.5rem', borderTop: '0.5px solid var(--gold)', paddingTop: '1rem' }}>
           <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--stone)', marginBottom: 6 }}>This week's scriptures</div>
-          <p style={{ fontSize: 13, lineHeight: 1.7, color: 'var(--stone)', margin: 0, fontFamily: 'var(--font-serif)' }}>{c.weekScriptures}</p>
+          <p style={{ fontSize: 13, lineHeight: 1.7, color: 'var(--stone)', margin: 0, fontFamily: 'var(--font-serif)' }}>{renderWeekScriptures(c.weekScriptures)}</p>
         </div>
       )}
     </div>

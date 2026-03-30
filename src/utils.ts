@@ -38,6 +38,32 @@ export function refLabel(ref: ScriptureRef): string {
   return `${book} ${ch}`;
 }
 
+/**
+ * Parse a free-text scripture reference like "Matt 27:27–44" or "1 Ne. 11:32–33"
+ * into a churchofjesuschrist.org URL. Returns null if it can't parse.
+ */
+export function refStringToUrl(ref: string): string | null {
+  const base = "https://www.churchofjesuschrist.org/study/scriptures/";
+  // Normalize: remove trailing periods from abbreviations, normalize dashes
+  const clean = ref.replace(/\./g, '').replace(/–/g, '-').trim();
+
+  // Match pattern: "BookName Chapter:VerseStart-VerseEnd" or "BookName Chapter"
+  const m = clean.match(/^(.+?)\s+(\d+)(?::(\d+)(?:-(\d+))?)?$/);
+  if (!m) return null;
+
+  const bookRaw = m[1].trim();
+  const ch = m[2];
+  const vs = m[3];
+
+  // Try to find book in BOOK_MAP (try with and without period normalization)
+  const path = BOOK_MAP[bookRaw];
+  if (!path) return null;
+
+  let url = `${base}${path}/${ch}?lang=eng`;
+  if (vs) url += `#p${vs}`;
+  return url;
+}
+
 export function getCurrent(): { week: number; day: number } {
   const start = new Date(2026, 0, 18); // Jan 18, 2026
   const now = new Date();

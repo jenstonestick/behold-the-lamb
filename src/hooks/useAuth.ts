@@ -12,12 +12,17 @@ export function useAuth() {
   useEffect(() => {
     if (!auth || !hasConfig) { setLoading(false); return; }
     let unsub: (() => void) | undefined;
-    import('firebase/auth').then(({ onAuthStateChanged }) => {
+
+    import('firebase/auth').then(({ onAuthStateChanged, getRedirectResult }) => {
+      // Check for redirect result (handles return from signInWithRedirect)
+      getRedirectResult(auth!).catch(() => {});
+
       unsub = onAuthStateChanged(auth!, (u) => {
         setUser(u);
         setLoading(false);
       });
     });
+
     return () => { unsub?.(); };
   }, []);
 
@@ -25,16 +30,21 @@ export function useAuth() {
     if (!auth) return;
     const { GoogleAuthProvider, signInWithPopup, signInWithRedirect } = await import('firebase/auth');
     const provider = new GoogleAuthProvider();
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches
-      || (navigator as unknown as { standalone?: boolean }).standalone === true;
+
+    // Try popup first; fall back to redirect if it fails (e.g. PWA, iOS Safari)
     try {
-      if (isStandalone) {
+      await signInWithPopup(auth, provider);
+    } catch (e: unknown) {
+      const code = (e as { code?: string })?.code;
+      // These errors mean popup was blocked or unavailable — use redirect instead
+      if (code === 'auth/popup-blocked' ||
+          code === 'auth/popup-closed-by-user' ||
+          code === 'auth/cancelled-popup-request' ||
+          code === 'auth/operation-not-supported-in-this-environment') {
         await signInWithRedirect(auth, provider);
       } else {
-        await signInWithPopup(auth, provider);
+        console.error('Sign-in failed:', e);
       }
-    } catch (e) {
-      console.error('Sign-in failed:', e);
     }
   }, []);
 
