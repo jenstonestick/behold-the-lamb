@@ -1,0 +1,47 @@
+:root {
+  --cream: #F7F3ED;
+  --surface: #EDE7DD;
+  --gold: #C4AD8A;
+  --stone: #9E8E72;
+  --brown: #5C4F3C;
+  --star: #BA7517;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+textarea {
+  font-family: var(--font-serif);
+  outline: none;
+}
+
+textarea:focus {
+  border-color: var(--gold) !important;
+}
+
+button {
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}

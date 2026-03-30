@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#F7F3ED"/>
+  <text x="256" y="200" font-family="Georgia, serif" font-size="48" font-weight="500" fill="#9E8E72" text-anchor="middle" letter-spacing="4">2026 STUDY PLAN</text>
+  <text x="256" y="290" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#5C4F3C" text-anchor="middle">Behold</text>
+  <text x="256" y="370" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#5C4F3C" text-anchor="middle">the Lamb</text>
+  <rect x="176" y="410" width="160" height="3" rx="1.5" fill="#C4AD8A"/>
+</svg>
