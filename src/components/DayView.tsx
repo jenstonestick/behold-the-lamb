@@ -146,7 +146,7 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
             onClick={() => tog('done', w, d)}
             style={{
               fontSize: 12, padding: '5px 12px', borderRadius: 6, cursor: 'pointer',
-              background: done ? 'var(--brown)' : 'transparent',
+              background: done ? 'var(--olive)' : 'transparent',
               color: done ? 'var(--cream)' : 'var(--stone)',
               border: done ? 'none' : '0.5px solid var(--gold)',
             }}
@@ -174,9 +174,9 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
             onClick={() => goDay(w, i)}
             style={{
               fontSize: 11, padding: '4px 8px', borderRadius: 6, cursor: 'pointer',
-              background: i === d ? 'var(--brown)' : st.done[`${w}-${i}`] ? 'var(--surface)' : 'transparent',
-              color: i === d ? 'var(--cream)' : 'var(--stone)',
-              border: i === d ? 'none' : '0.5px solid var(--gold)',
+              background: i === d ? 'var(--olive)' : st.done[`${w}-${i}`] ? 'var(--olive-light)' : 'transparent',
+              color: i === d ? 'var(--cream)' : st.done[`${w}-${i}`] ? 'var(--olive)' : 'var(--stone)',
+              border: i === d ? 'none' : st.done[`${w}-${i}`] ? '0.5px solid var(--olive)' : '0.5px solid var(--gold)',
               fontWeight: i === d ? 500 : 400,
             }}
           >

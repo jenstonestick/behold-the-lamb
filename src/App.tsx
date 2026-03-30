@@ -80,7 +80,7 @@ export default function App() {
               fontWeight: view === tab.id ? 500 : 400,
               color: view === tab.id ? 'var(--brown)' : 'var(--stone)',
               background: 'none', border: 'none',
-              borderBottom: view === tab.id ? '2px solid var(--gold)' : '2px solid transparent',
+              borderBottom: view === tab.id ? '2px solid var(--olive)' : '2px solid transparent',
               cursor: 'pointer',
             }}
           >
