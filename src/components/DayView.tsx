@@ -1,8 +1,19 @@
-import type { AppState, WeekContent } from '../types';
+import { useState, useCallback } from 'react';
+import type { AppState, WeekContent, ScriptureRef } from '../types';
 import { DAYS, WEEKS, scrUrl, refLabel } from '../utils';
+import { getVerses, type VerseEntry } from '../scripture-lookup';
 import Sec from './Sec';
 import Synth from './Synth';
 import { content } from '../content';
+
+/** Render verse text, converting [italics]...[/italics] to <i> elements */
+function renderVerseText(text: string) {
+  const parts = text.split(/\[italics\](.*?)\[\/italics\]/g);
+  if (parts.length === 1) return text;
+  return parts.map((part, i) =>
+    i % 2 === 1 ? <i key={i}>{part}</i> : part
+  );
+}
 
 interface Props {
   w: number;
@@ -12,6 +23,89 @@ interface Props {
   setNote: (w: number, d: number, txt: string) => void;
   goDay: (w: number, d: number) => void;
   goWeek: (w: number) => void;
+}
+
+function ScriptureCard({ s }: { s: ScriptureRef }) {
+  const [open, setOpen] = useState(false);
+  const [verses, setVerses] = useState<VerseEntry[] | null>(null);
+  const [loading, setLoading] = useState(false);
+  const url = scrUrl(s);
+  const lbl = refLabel(s);
+
+  const load = useCallback(async () => {
+    if (verses) { setOpen(o => !o); return; }
+    setOpen(true);
+    setLoading(true);
+    const v = await getVerses(s);
+    setVerses(v);
+    setLoading(false);
+  }, [verses, s]);
+
+  return (
+    <div style={{ background: 'var(--surface)', borderRadius: 6, overflow: 'hidden' }}>
+      <div
+        onClick={load}
+        style={{
+          padding: '12px 14px', cursor: 'pointer',
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        }}
+      >
+        <div>
+          <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--brown)', fontFamily: 'var(--font-serif)' }}>
+            {lbl}
+          </div>
+          <div style={{ fontSize: 12, color: 'var(--stone)', marginTop: 4, fontStyle: 'italic' }}>
+            {open ? 'Tap to collapse' : 'Tap to read'}
+          </div>
+        </div>
+        <span style={{ fontSize: 14, color: 'var(--stone)', transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0)' }}>
+          ▾
+        </span>
+      </div>
+
+      {open && (
+        <div style={{ padding: '0 14px 14px', borderTop: '0.5px solid var(--gold)' }}>
+          {loading ? (
+            <div style={{ fontSize: 13, color: 'var(--stone)', padding: '12px 0', fontStyle: 'italic' }}>Loading…</div>
+          ) : verses && verses.length > 0 ? (
+            <div style={{ paddingTop: 10 }}>
+              {verses.map(v => (
+                <p key={v.num} style={{
+                  fontSize: 14, lineHeight: 1.85, color: 'var(--brown)', margin: '0 0 6px',
+                  fontFamily: 'var(--font-serif)', textIndent: 0,
+                }}>
+                  <span style={{ fontWeight: 600, fontSize: 11, color: 'var(--stone)', marginRight: 4, verticalAlign: 'super' }}>
+                    {v.num}
+                  </span>
+                  {renderVerseText(v.text)}
+                </p>
+              ))}
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: 11, color: 'var(--stone)', textDecoration: 'none', borderBottom: '1px dotted var(--gold)', display: 'inline-block', marginTop: 4 }}
+              >
+                View at churchofjesuschrist.org ↗
+              </a>
+            </div>
+          ) : (
+            <div style={{ paddingTop: 10 }}>
+              <div style={{ fontSize: 13, color: 'var(--stone)', marginBottom: 8, fontStyle: 'italic' }}>Scripture text not available offline.</div>
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: 13, color: 'var(--brown)', textDecoration: 'none', borderBottom: '1px dotted var(--gold)' }}
+              >
+                Read at churchofjesuschrist.org ↗
+              </a>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
@@ -28,7 +122,6 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
         <div style={{ fontSize: 14, color: 'var(--stone)', fontFamily: 'var(--font-serif)', lineHeight: 1.8 }}>
           Content for Week {w} ({wk.topic}) is coming soon.
         </div>
-        <div style={{ fontSize: 13, color: 'var(--stone)', marginTop: 8, opacity: 0.7 }}>Weeks 1–4 are available now.</div>
       </div>
     );
   }
@@ -95,25 +188,9 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
       {/* Scripture */}
       <Sec label="Scripture">
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          {day.scriptures.map((s, i) => {
-            const url = scrUrl(s);
-            const lbl = refLabel(s);
-            return (
-              <div key={i} style={{ background: 'var(--surface)', borderRadius: 6, padding: '12px 14px' }}>
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: 14, fontWeight: 500, color: 'var(--brown)', textDecoration: 'none', borderBottom: '1px dotted var(--gold)', fontFamily: 'var(--font-serif)' }}
-                >
-                  {lbl}
-                </a>
-                <div style={{ fontSize: 12, color: 'var(--stone)', marginTop: 6, fontStyle: 'italic' }}>
-                  Tap to read at churchofjesuschrist.org ↗
-                </div>
-              </div>
-            );
-          })}
+          {day.scriptures.map((s, i) => (
+            <ScriptureCard key={`${s.book}-${s.ch}-${s.vs}-${i}`} s={s} />
+          ))}
         </div>
       </Sec>
 
