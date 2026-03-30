@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week05: WeekContent = {
   title: "Appearances, Antemortal — Before He Came in the Flesh",
   subtitle: "Christ appeared to prophets long before Bethlehem, revealing Himself across the centuries to those who sought Him.",
-  weekScriptures: "Ether 3:6–16; Gen 32:24–30; Ex 3:1–14; Ex 33:11,20–23; Isa 6:1–5; Ezek 1:26–28; Dan 7:9–14; 1 Ne 1:8–10; 2 Ne 11:2–3; Jacob 2:4; Mosiah 27:8–16; Alma 36:17–22; Hel 5:36–43; Abr 3:22–28; Moses 1:1–6; JS-H 1:16–17",
+  weekScriptures: "Judg 13:21-22; 1 Kgs 19:11-13; Ezek 1:26-28; Dan 7:9-14; Num 12:6-8; Acts 7:55-56; 3 Ne 11:8-12; D&C 76:19-24; D&C 110:1-4; Mosiah 27:8-16; Rev 1:12-18; Alma 19:12-13",
   synthesis: {
     summary: "Before Christ was born in Bethlehem, He appeared to prophets across multiple dispensations. These antemortal appearances — sometimes called theophanies or Christophanies — demonstrate that the God of the Old Testament was the premortal Jehovah, the same being who would later take on flesh. They reveal a God who does not remain hidden but actively seeks to be known by His covenant people.",
     connections: [

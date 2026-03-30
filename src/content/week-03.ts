@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week03: WeekContent = {
   title: "The Anointed One",
   subtitle: "What does it mean that Jesus was \u2018anointed\u2019? This week explores the ancient practice and its fulfillment in Christ.",
-  weekScriptures: "Ex. 30:22\u201330; Lev. 8:10\u201312; Ps. 2:2; Deut. 18:15\u201318; Acts 3:22\u201323; 3 Ne. 20:23; Heb. 5:1\u20136; Heb. 7:24\u201327; Alma 13:1\u20139; Isa. 9:6\u20137; Luke 1:32\u201333; Rev. 19:16; Luke 4:16\u201321; Acts 10:38; 2 Ne. 10:3; 2 Cor. 1:21\u201322; 1 Jn. 2:20\u201327; D&C 109:80; Philip. 2:9\u201311; Mosiah 3:17; D&C 19:18\u201319",
+  weekScriptures: "John 4:25-26; Matt 16:16; Dan 9:25-26; Ps 45:7; Isa 61:1-3; John 1:41; Acts 2:36; Heb 1:8-9; 1 Sam 16:12-13; Jacob 4:4-5; D&C 20:1; Alma 5:50",
   synthesis: {
     summary: "The titles \u2018Christ\u2019 (Greek) and \u2018Messiah\u2019 (Hebrew) both mean \u2018the Anointed One.\u2019 Anointing in ancient Israel set apart prophets, priests, and kings. Jesus fulfilled all three roles \u2014 not symbolically but completely.",
     connections: [

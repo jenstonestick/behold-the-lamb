@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week21: WeekContent = {
   title: "Baptism of — The Sinless One Enters the Water",
   subtitle: "Jesus Christ's baptism inaugurated His public ministry and established the pattern every disciple follows.",
-  weekScriptures: "Matt. 3:13–17; Mark 1:9–11; Luke 3:21–22; John 1:29–34; 2 Ne. 31:4–13; Mosiah 18:8–10; D&C 20:72–74; Moses 6:64–68; 3 Ne. 11:23–28; D&C 33:11–12; Acts 19:1–6; Gal. 3:27; Rom. 6:3–6; Moro. 8:25–26; 3 Ne. 12:1–2",
+  weekScriptures: "Acts 2:37-38; Acts 8:36-39; Acts 22:16; 1 Pet 3:21; Mark 16:16; D&C 13:1; D&C 22:1-4; D&C 68:25-27; D&C 84:64; 2 Ne 9:23-24; Moro 6:1-4; Alma 5:62; 3 Ne 27:20",
   synthesis: {
     summary: "The baptism of Jesus Christ is one of the most theologically rich events in scripture. The sinless Son of God submitted to an ordinance designed for sinners — not because He needed it, but because we needed to see Him do it. His baptism revealed the Godhead, inaugurated His ministry, established the form and authority of the ordinance, and created the covenant path every disciple walks. Every baptism since points back to His.",
     connections: [

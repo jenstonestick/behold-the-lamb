@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week45: WeekContent = {
   title: "Seed of Christ — His Spiritual Posterity",
   subtitle: "Christ has children — not biologically, but covenantally. All who are born again through Him become His seed.",
-  weekScriptures: "Mosiah 5:7–10; Isa. 53:10–11; Mosiah 15:10–13; Mosiah 27:24–26; D&C 25:1; Abr. 2:9–11; Gal. 3:26–29; Mosiah 18:8–10; D&C 84:33–40; Rom. 8:14–17; Alma 5:14; Alma 36:23–26; John 1:12–13; D&C 39:4; 3 Ne. 9:17; Ether 3:14; Mosiah 5:1–5; D&C 76:24",
+  weekScriptures: "John 3:3-7; Mosiah 4:2-3; Alma 22:15; D&C 11:30; Isa 53:8; 2 Cor 5:17; Eph 2:19; Mosiah 5:11-12; Heb 2:11-13; D&C 35:2; Alma 7:14",
   synthesis: {
     summary: "Isaiah prophesied that the Messiah would 'see his seed' despite dying without mortal posterity. Abinadi's inspired commentary reveals that Christ's seed are those who receive His gospel, are born again through His Atonement, and take upon them His name through covenant. This week explores the profound truth that through faith, repentance, and baptism, we become the children of Christ — heirs of His promises, bearers of His name, and participants in His eternal family.",
     connections: [

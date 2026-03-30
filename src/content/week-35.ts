@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week35: WeekContent = {
   title: "Second Comforter — Christ Himself as the Promise",
   subtitle: "Beyond the Holy Ghost, there is a greater promise: that Christ Himself will manifest to the faithful.",
-  weekScriptures: "John 14:16–18; John 14:21–23; D&C 88:3–4; D&C 93:1; D&C 130:3; 2 Ne 32:6; Ether 3:13–16; Rev 3:20; 3 Ne 11:14–15; John 17:3; D&C 67:10–13; D&C 76:116–118; Moro 7:47–48; Alma 32:41–43; John 15:4–5; 3 Ne 19:29",
+  weekScriptures: "John 14:26; John 16:7; D&C 88:67-68; D&C 121:45-46; D&C 50:45; Gen 32:30; Ex 33:11; Isa 25:9; 1 Jn 3:2; Moro 7:26; D&C 76:12-14",
   synthesis: {
     summary: "This week explores one of the most sacred doctrines in Restoration theology: the Second Comforter. Christ promised His disciples that after the first Comforter (the Holy Ghost), He Himself would come to those who love Him and keep His commandments. This is not merely symbolic — it is a literal promise that the faithful may come to know Christ personally. The doctrine of the Second Comforter frames the entire purpose of the gospel: not merely to learn about Christ, but to know Him and to be known by Him.",
     connections: [

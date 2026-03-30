@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week47: WeekContent = {
   title: "Good Shepherd — He Knows His Sheep by Name",
   subtitle: "Christ is not a distant ruler but an intimate shepherd who calls, feeds, protects, and lays down His life for His flock.",
-  weekScriptures: "John 10:1–18; John 10:27–30; Ps. 23:1–6; Ezek. 34:11–16; Isa. 40:11; Alma 5:37–39; 1 Pet. 2:25; Heb. 13:20; 3 Ne. 15:17–21; 3 Ne. 18:31; Luke 15:3–7; 1 Ne. 22:25; Mosiah 26:20–21; John 21:15–17; Alma 5:57–60; D&C 50:44",
+  weekScriptures: "Jer 31:10; Ezek 34:23-24; Micah 7:14; Zech 11:4-9; Matt 18:12-14; Mark 6:34; Heb 13:20-21; 1 Pet 5:4; Matt 25:32-33; Alma 5:41-42; Gen 49:24",
   synthesis: {
     summary: "The image of the shepherd is among the most personal and tender in all scripture. Christ did not choose the title of general, philosopher, or emperor — He called Himself the Good Shepherd. This week explores what that title means: He knows each sheep individually, He leads rather than drives, He provides green pastures and still waters, He searches for the lost, and He lays down His life voluntarily. No other title captures the combination of authority and intimacy that defines Christ's relationship with His people.",
     connections: [

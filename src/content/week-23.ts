@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week23: WeekContent = {
   title: "Authority of — The Power Behind the Mission",
   subtitle: "Jesus Christ acted with divine authority in everything He did — and the question of where that authority came from was the central controversy of His ministry.",
-  weekScriptures: "Matt. 28:18; John 5:19–27; Matt. 7:28–29; Mark 2:5–12; John 10:17–18; Matt. 21:23–27; Luke 5:17–26; John 17:1–5; Mosiah 15:1–7; D&C 1:38; Heb. 5:1–10; D&C 121:34–46; Alma 13:1–9; Matt. 9:6–8; D&C 84:19–22; 3 Ne. 11:21–25; D&C 13:1; Moses 1:25–33",
+  weekScriptures: "Ps 110:1-4; Matt 11:27; Luke 10:22; John 14:10; John 20:21-23; Acts 4:7-12; 1 Cor 15:24-27; Heb 3:1-6; D&C 6:2; D&C 50:26-28; D&C 107:3-4; Jacob 7:8-11; Mosiah 18:17-18",
   synthesis: {
     summary: "The authority of Jesus Christ was not assumed, inherited through earthly channels, or self-appointed. It was given by the Father, demonstrated through works of power, and recognized by those with spiritual eyes to see. His authority extended over sin, death, nature, demons, and the law itself — because He was the Author of all of them. Understanding Christ's authority is essential to understanding why His ordinances, His Atonement, and His Church have binding power.",
     connections: [

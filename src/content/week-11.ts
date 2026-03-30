@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week11: WeekContent = {
   title: "Crucifixion & Death — The Sacrifice Completed",
   subtitle: "On a hill called Golgotha, the Creator of the world gave His life — not because He had to, but because He chose to.",
-  weekScriptures: "Matt 27:27–44; Mark 15:16–32; Luke 23:26–43; John 19:16–27; Ps. 22:1–18; Isa. 53:3–7; Matt 27:45–56; Mark 15:33–41; Luke 23:44–49; John 19:28–37; 1 Ne. 11:32–33; 2 Ne. 9:5–9; Mosiah 3:7–8; Hel. 14:14–19; 3 Ne. 8:5–23; D&C 45:51–53",
+  weekScriptures: "Zech 12:10; Ps 69:20-21; Gal 6:14; Mark 15:34-39; Luke 23:46; John 10:17-18; John 3:14-15; Alma 34:14; Heb 12:2; 1 Pet 2:24; Mosiah 15:7-9; Acts 2:23",
   synthesis: {
     summary: "The Crucifixion of Jesus Christ is the hinge on which all of human history turns. Every ordinance of the Mosaic law, every prophecy of the Old Testament, every promise of the Book of Mormon pointed forward to this hour. And every covenant, every baptism, every act of repentance since that day points back to it. This week we walk slowly through those final hours — the scourging, the cross, the seven last words, the darkness, and the death. We do so not to sensationalize suffering but to understand the cost of our redemption.",
     connections: [

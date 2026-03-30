@@ -264,7 +264,7 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
       {/* Week scriptures */}
       {c.weekScriptures && (
         <div style={{ marginTop: '1.5rem', borderTop: '0.5px solid var(--gold)', paddingTop: '1rem' }}>
-          <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--stone)', marginBottom: 6 }}>This week's scriptures</div>
+          <div style={{ fontSize: 12, fontWeight: 500, color: 'var(--stone)', marginBottom: 6 }}>Additional scriptures</div>
           <p style={{ fontSize: 13, lineHeight: 1.7, color: 'var(--stone)', margin: 0, fontFamily: 'var(--font-serif)' }}>{renderWeekScriptures(c.weekScriptures)}</p>
         </div>
       )}

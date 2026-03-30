@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week01: WeekContent = {
   title: "Jesus Christ \u2014 An Overview",
   subtitle: "Who is He? Why does it matter? A foundation for every week that follows.",
-  weekScriptures: "John 1:1\u201314; 2 Ne. 25:26; D&C 76:22\u201324; Mosiah 3:5\u20138; 1 Tim. 3:16; Acts 10:43; Jacob 7:11; Mosiah 13:33\u201335; Acts 4:12; 2 Ne. 31:21; Mosiah 3:17; D&C 18:23; 1 Cor. 12:3; D&C 46:13\u201314; Moro. 10:4\u20135; D&C 88:6\u201313; Col. 1:15\u201320; Alma 7:11\u201313; D&C 76:22\u201324; JS\u2014H 1:17; 3 Ne. 11:7\u201311",
+  weekScriptures: "Rev 1:8; Isa 9:6; Matt 16:15-17; Heb 1:1-3; Philip 2:9-11; Ether 3:14; D&C 110:1-4; John 20:31; 2 Ne 11:4-7; Mosiah 4:2-3; D&C 93:1-2; Abr 3:24-27",
   synthesis: {
     summary: "This opening week establishes the foundational truth: Jesus Christ is the central figure of all scripture and all history. He is not merely a teacher or prophet \u2014 He is the Son of God, the Creator, the Redeemer, and the coming King. Every dispensation opens with a direct testimony of Him, and every standard work converges on His identity.",
     connections: [

@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week40: WeekContent = {
   title: "Types in Anticipation — Old Testament Shadows Pointing to Christ",
   subtitle: "Before Christ came in the flesh, He came in symbols — woven into the lives, rituals, and events of His ancient covenant people.",
-  weekScriptures: "Gen. 22:1–14; Ex. 12:3–13; Ex. 16:14–15; Num. 21:6–9; Lev. 16:7–22; 2 Ne. 11:4; Jacob 4:5; Mosiah 13:29–33; John 3:14–15; 1 Cor. 5:7; John 6:31–35; Heb. 9:11–14; Isa. 53:7; John 1:29; Gen. 14:18; Heb. 7:1–3; Alma 25:15–16",
+  weekScriptures: "Gen 28:12; Ex 17:5-6; Ruth 4:14; 1 Sam 16:11-13; 2 Sam 7:12-16; Jonah 1:17; 1 Cor 10:1-4; Gal 3:24; Heb 8:5; Heb 10:1; Jarom 1:11; Mosiah 16:14-15",
   synthesis: {
     summary: "Typology is the practice of reading Old Testament events, persons, and rituals as divinely intended prefigurations of Jesus Christ. The sacrifice of Isaac, the Passover lamb, the manna, the brazen serpent, and the Day of Atonement all point forward to Christ's life, death, and saving power. These were not accidents or later reinterpretations — Nephite prophets explicitly taught that their entire religious system was designed to keep their minds fixed on the coming Messiah.",
     connections: [

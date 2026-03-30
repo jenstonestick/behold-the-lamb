@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week27: WeekContent = {
   title: "Lamb of God — The Sacrifice That Saves",
   subtitle: "From the Passover lamb to John the Baptist's declaration, one image captures the heart of the gospel: the Lamb slain from the foundation of the world.",
-  weekScriptures: "John 1:29,36; Rev 5:6–14; Rev 13:8; 1 Pet 1:18–20; Isa 53:7; Ex 12:3–7,13; 1 Cor 5:7; Gen 22:7–8,13; 1 Ne 11:31–33; Alma 34:8–14; Moro 10:33; Rev 7:13–17; Rev 21:22–27; D&C 76:85; Moses 7:47",
+  weekScriptures: "Ex 12:21–23; Ex 29:38–42; Lev 4:32–35; Isa 53:4–6; John 1:35–37; Acts 8:32–35; 1 Pet 1:19; Rev 5:9; Rev 12:11; Rev 14:1–4; Rev 15:3; Rev 17:14; Rev 22:1–3; 2 Ne 9:26; Alma 7:14",
   synthesis: {
     summary: "The image of Christ as the Lamb of God is among the most ancient and central in all scripture. It traces from Abel's offering through the Passover, through Isaiah's suffering servant, through John the Baptist's declaration, to the Lamb standing in the midst of the throne in Revelation. This title uniquely captures both Christ's innocence and His voluntary submission to sacrifice. He is not a victim — He is the Lamb who chose to be slain so that others could live.",
     connections: [

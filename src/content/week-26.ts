@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week26: WeekContent = {
   title: "King & Lord — The Sovereign Majesty of Jesus Christ",
   subtitle: "He is not merely a teacher or example — He is the King of Kings and Lord of Lords, the rightful ruler of heaven and earth.",
-  weekScriptures: "Rev 19:11–16; 1 Tim 6:14–16; Ps 24:7–10; Dan 7:13–14; Isa 9:6–7; Jer 23:5–6; Zech 14:9; Matt 25:31–34; Luke 1:32–33; John 18:36–37; Philip 2:9–11; 1 Ne 22:24–26; 2 Ne 10:14; Mosiah 3:5; D&C 38:1–3; D&C 76:1–4; Rev 17:14; Ps 2:6–9",
+  weekScriptures: "Deut 10:17; Ps 47:2,7; Ps 93:1–2; Ps 97:1–5; Ps 99:1–3; Isa 33:22; Isa 44:6; Jer 10:10; Dan 2:44; Mal 1:14; 1 Tim 1:17; Rev 1:5–6; Rev 11:15; D&C 58:22; Mosiah 5:15",
   synthesis: {
     summary: "This week explores the scriptural witness that Jesus Christ holds the title King of Kings and Lord of Lords — not as metaphor but as literal description of His present and future sovereignty. From Old Testament prophecy through New Testament declaration to Restoration confirmation, every dispensation testifies that Christ is the supreme ruler over all creation, all nations, and all other powers. His kingship is unlike earthly rule: it is founded on righteousness, mercy, and the power of the Atonement.",
     connections: [

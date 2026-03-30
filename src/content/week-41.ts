@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week41: WeekContent = {
   title: "Types in Memory — Ordinances and Symbols That Point Back to Christ",
   subtitle: "Since the Resurrection, God has given us ordinances and emblems that look backward to the cross and forward to His return.",
-  weekScriptures: "Luke 22:19–20; 3 Ne. 18:7–11; 3 Ne. 20:8–9; 1 Cor. 11:23–26; Moro. 4:3; Moro. 5:2; Matt. 28:19; 2 Ne. 31:5–13; 3 Ne. 11:23–26; Mosiah 18:8–10; D&C 20:72–74; Moro. 6:5–6; D&C 59:9–12; John 13:1–17; D&C 138:33–34; Moro. 10:32–33",
+  weekScriptures: "Matt 28:19; Gen 14:18; Acts 20:7; Acts 2:38; Col 2:12; D&C 20:75-79; Mosiah 13:30; Lev 23:3; Deut 5:12-15; D&C 128:15-18; 1 Cor 10:16-17",
   synthesis: {
     summary: "If Week 40 explored symbols that pointed forward to a Messiah who had not yet come, this week examines symbols that point backward to a Savior who has already sacrificed. Baptism, the sacrament, and other ordinances of the gospel are not mere rituals — they are divinely appointed acts of remembrance that connect us to Christ's Atonement across time. Every time bread is broken and water is blessed, Calvary becomes present tense.",
     connections: [

@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week17: WeekContent = {
   title: "Glory of — The Radiance of Christ",
   subtitle: "The glory of Christ is the visible manifestation of His divine nature — a radiance that fills temples, transforms mortals, and will one day fill the earth.",
-  weekScriptures: "John 17:5; John 17:22–24; John 1:14; Isa 6:1–3; Isa 40:5; Ezek 43:1–5; Heb 1:3; 2 Cor 3:18; 2 Cor 4:6; Matt 17:1–5; Rev 21:23; D&C 76:19–23; D&C 93:36; D&C 88:7–10; Moses 1:1–5; Moses 1:11; 1 Ne 1:8–10; 2 Ne 11:2–3; 3 Ne 19:25; Morm 9:5",
+  weekScriptures: "Ex 33:18-23; Ps 19:1; Ps 72:19; Hab 2:14; John 2:11; Acts 7:55-56; Rom 6:4; Philip 3:21; Col 3:4; D&C 63:2; D&C 76:56-58; D&C 84:24; Alma 40:25-26",
   synthesis: {
     summary: "Glory in scripture is not abstract praise but visible, tangible reality — light, presence, weight. The Hebrew 'kavod' means weightiness or heaviness; God's glory is the felt impact of His presence. Christ possesses this glory from eternity, shared it with the Father before the world was, and will ultimately share it with the faithful. This week traces the glory of Christ from its premortal origins through its mortal manifestation, its temple presence, and its ultimate eschatological fulfillment when it fills all creation.",
     connections: [

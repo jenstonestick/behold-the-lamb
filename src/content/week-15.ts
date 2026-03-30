@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week15: WeekContent = {
   title: "Deliverer — Set Free by Christ",
   subtitle: "Christ does not merely forgive sin; He breaks every chain that holds us captive — sin, death, fear, and spiritual bondage.",
-  weekScriptures: "Rom 11:26–27; 2 Sam 22:2–4; Ps 18:2; Ps 40:1–3; Isa 61:1–3; Luke 4:16–21; Col 1:13–14; Rom 6:16–18; 1 Cor 15:55–57; 2 Ne 9:10–13; Mosiah 27:24–29; Alma 36:17–21; 3 Ne 9:13–14; D&C 128:22; D&C 138:18–19; Heb 2:14–15; Matt 11:28–30; John 8:31–36; 2 Tim 1:10; Ex 14:13–14",
+  weekScriptures: "Ps 34:4-7; Ps 107:6-8; Ps 146:7; Isa 49:24-26; Isa 51:10-11; Jer 15:20-21; Zech 9:11-12; Acts 26:17-18; Gal 5:1; 1 Ne 1:20; 2 Ne 1:15; Mosiah 23:23; D&C 108:8",
   synthesis: {
     summary: "While Week 14 focused on the price Christ paid, this week focuses on the lived experience of being delivered. Deliverance is what redemption feels like. It is the chains falling off, the prison doors opening, the darkness giving way to light. Scripture records this experience across every dispensation — from Israel at the Red Sea to Alma in the depths of despair to Joseph Smith in Liberty Jail. The Deliverer breaks every kind of bondage: the bondage of sin, the bondage of death, the bondage of fear, and the bondage of spiritual ignorance.",
     connections: [

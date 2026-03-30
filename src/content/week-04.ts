@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week04: WeekContent = {
   title: "Antemortal Existence of Christ",
   subtitle: "Before Bethlehem, before Genesis \u2014 who was Jesus Christ in the pre-mortal world?",
-  weekScriptures: "John 1:1\u20133; John 17:5; D&C 93:7\u201310; 1 Pet. 1:19\u201320; Rev. 13:8; Moses 4:1\u20132; Abr. 3:22\u201328; D&C 29:36\u201338; Isa. 14:12\u201314; Heb. 1:1\u20133; Col. 1:16\u201317; Moses 1:33; Alma 13:3\u20135; Jer. 1:5; D&C 138:55\u201356; Abr. 3:24\u201326; 2 Ne. 2:25; D&C 93:29\u201333; Philip. 2:5\u20138; John 6:38; 3 Ne. 1:14",
+  weekScriptures: "John 8:58; Prov 8:22-30; John 3:13; Micah 5:2; Ether 3:15-16; D&C 38:1-3; Moses 7:47; John 16:28; D&C 76:13-14; 1 Jn 1:1-2; Alma 18:28-29",
   synthesis: {
     summary: "Jesus Christ did not begin at Bethlehem. He existed as a spirit being \u2014 Jehovah, the Firstborn \u2014 before the foundation of the world. He participated in creation, presented the Father\u2019s plan, and was chosen as the Redeemer before any of us were born.",
     connections: [

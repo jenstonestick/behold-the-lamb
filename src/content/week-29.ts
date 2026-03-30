@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week29: WeekContent = {
   title: "Son of God — The Divine Identity of Jesus Christ",
   subtitle: "The title 'Son of God' is not honorary or metaphorical — it is a literal declaration of Christ's divine parentage and nature.",
-  weekScriptures: "Matt 16:15–17; John 1:34; John 3:16–18; John 10:36; John 20:31; Luke 1:35; Mark 1:1,11; Heb 1:1–5; 1 Jn 4:9–10,15; 2 Ne 25:19; Alma 36:17; Hel 5:12; D&C 93:21; Moses 4:2; 1 Ne 11:18–21",
+  weekScriptures: "Matt 3:17; Matt 14:33; Matt 17:5; Matt 27:54; Mark 3:11; Luke 4:41; John 1:49; John 5:25; John 9:35–37; John 11:27; Acts 9:20; Rom 1:4; 2 Pet 1:17; 1 Jn 5:5,10–12; Alma 33:22",
   synthesis: {
     summary: "The title 'Son of God' is the most fundamental declaration about who Jesus Christ is. It appears across every book of scripture, spoken by the Father, by angels, by prophets, by apostles, by demons, and by Christ Himself. Unlike 'Son of Man' (explored next week), which emphasizes His connection to humanity, 'Son of God' emphasizes His connection to divinity. Latter-day Saint theology affirms this title literally: Jesus is the literal Son of God the Father, with all the divine attributes and authority that relationship implies.",
     connections: [

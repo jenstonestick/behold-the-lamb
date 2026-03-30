@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week30: WeekContent = {
   title: "Son of Man — The Lord Who Shares Our Humanity",
   subtitle: "Jesus called Himself the Son of Man more than any other title — a name that declares His solidarity with humanity and His authority over it.",
-  weekScriptures: "Dan 7:13–14; Matt 8:20; Matt 9:6; Matt 16:13; Matt 24:30; Matt 25:31; Matt 26:64; Mark 10:45; Luke 19:10; John 1:51; John 3:13–14; John 6:53; Acts 7:56; Mosiah 3:7; Moses 6:57; D&C 45:39",
+  weekScriptures: "Matt 12:8; Matt 12:40; Matt 13:41; Matt 17:9,12,22; Matt 18:11; Matt 20:18,28; Mark 2:10; Mark 14:21,41,62; Luke 6:22; Luke 9:22,44,58; Luke 12:8,40; Luke 17:24,26; John 8:28; John 12:23,34",
   synthesis: {
     summary: "While 'Son of God' (Week 29) emphasizes Christ's divine nature, 'Son of Man' emphasizes His chosen connection to humanity. Jesus used this title for Himself more than 80 times in the Gospels — far more than any other designation. It draws from Daniel's vision of a divine figure receiving an everlasting kingdom, while simultaneously affirming that the God of the universe chose to enter the human condition. The Son of Man has authority to forgive sins, will come in glory to judge, and has no place to lay His head. The title holds together Christ's cosmic authority and His earthly vulnerability.",
     connections: [

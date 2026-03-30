@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week14: WeekContent = {
   title: "Redeemer & Savior — Bought with a Price",
   subtitle: "Christ is not merely a teacher or moral guide; He is the one who paid the price to reclaim us from sin and death.",
-  weekScriptures: "Isa 44:6; Isa 44:22–24; Job 19:25–27; Ps 130:7–8; Isa 53:4–7; 1 Pet 1:18–20; Gal 3:13; Rev 5:9–10; 2 Ne 2:6–8; Alma 34:8–14; Mosiah 15:1–9; Hel 5:9–12; D&C 18:10–12; D&C 76:40–42; Moses 1:39; Luke 2:11; John 3:16–17; Titus 2:13–14; 1 Jn 4:14; Acts 5:30–31",
+  weekScriptures: "Isa 43:1; Isa 47:4; Isa 54:5; Ps 19:14; Ps 103:4; Rom 3:24; Eph 1:7; Col 1:14; 1 Tim 4:10; 1 Ne 10:5-6; 2 Ne 6:17; Jacob 6:4; Alma 11:40-41; D&C 93:9",
   synthesis: {
     summary: "The titles Redeemer and Savior are not interchangeable synonyms but complementary descriptions of what Christ does. To redeem is to buy back, to pay a price to reclaim something lost. To save is to deliver from destruction. Together they describe a God who entered mortality, paid an infinite cost, and rescued the entire human family from both physical and spiritual death. Every prophet in every age has testified that this redemption was planned before the world was and that no one else could accomplish it.",
     connections: [

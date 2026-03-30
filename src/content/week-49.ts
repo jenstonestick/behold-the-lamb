@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week49: WeekContent = {
   title: "Birth of Jesus Christ — The Word Made Flesh",
   subtitle: "Christmas week: the God of heaven entered the world as a helpless infant, and nothing has been the same since.",
-  weekScriptures: "Luke 2:1–20; Matt. 1:18–25; Matt. 2:1–12; Isa. 7:14; Isa. 9:6–7; Micah 5:2; 1 Ne. 11:13–21; Alma 7:10; Mosiah 3:5–8; Hel. 14:1–6; 3 Ne. 1:13–21; Luke 1:26–38; Luke 1:46–55; John 1:1–14; Gal. 4:4; D&C 93:1–5; Luke 2:25–35; Luke 2:36–38; Matt. 2:13–23; Philip. 2:5–8",
+  weekScriptures: "Luke 2:40; Luke 2:46-52; Matt 1:21; 2 Ne 17:14; Mosiah 3:9-10; Hel 14:12; Alma 7:11-12; Gen 3:15; Rev 12:1-5; Matt 2:6; D&C 93:12-14",
   synthesis: {
     summary: "This is Christmas week — the celebration of the most consequential birth in the history of the universe. The Creator of worlds became an infant. The King of Kings was laid in a manger. Angels sang to shepherds, a star guided wise men, and prophets on two continents bore witness. Every week of this study has explored some facet of who Jesus Christ is; this week, we return to where it all began in mortality — a young mother, a stable, a night that split history in two. The birth of Christ is the hinge of eternity: everything before it pointed forward; everything after it looks back.",
     connections: [

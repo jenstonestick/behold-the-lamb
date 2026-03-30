@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week16: WeekContent = {
   title: "Power of — The Almighty Christ",
   subtitle: "The power of Jesus Christ is not abstract theology; it is the operative force that created worlds, heals bodies, transforms hearts, and will raise the dead.",
-  weekScriptures: "Matt 28:18; Luke 4:36; Mark 4:37–41; John 10:17–18; Matt 9:6–8; Philip 4:13; 2 Cor 12:9–10; Eph 1:19–21; Eph 3:20; Moro 10:32–33; 2 Ne 1:15; Mosiah 4:6–7; Alma 26:12; D&C 88:6–13; D&C 17:1; Hel 5:17–18; 3 Ne 28:6–7; Morm 9:15–21; Jacob 4:6–7; 1 Ne 17:46–48",
+  weekScriptures: "Ps 147:5; Isa 40:29-31; Jer 32:17; Dan 4:35; Matt 19:26; John 11:43-44; Acts 10:38; Rom 1:16; Col 1:11; Heb 1:3; Alma 37:16; D&C 68:6; 3 Ne 17:7-9",
       synthesis: {
     summary: "Christ possesses all power — in heaven and on earth, over nature and nations, over sin and death. This is not merely a theological assertion but a demonstrated reality. He calmed storms, healed bodies, forgave sins, conquered death, and promised that His power would be available to His disciples. The Book of Mormon and Doctrine and Covenants add the teaching that this same power operates in individual lives through faith, enabling ordinary people to do extraordinary things.",
     connections: [

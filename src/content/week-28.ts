@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week28: WeekContent = {
   title: "Messenger of the Covenant — Christ as Mediator and Covenant Maker",
   subtitle: "He is the messenger the Father sent to establish, fulfill, and mediate every saving covenant between God and humanity.",
-  weekScriptures: "Mal 3:1–3; Heb 8:6; Heb 9:15; Heb 12:24; D&C 107:19; 3 Ne 20:25–26; Isa 42:6–7; Isa 49:8–9; Luke 22:20; 1 Cor 11:25; Mosiah 5:5–8; D&C 84:33–40; Moro 10:33; Gen 17:1–7; 2 Ne 11:4–5",
+  weekScriptures: "Gen 15:9–18; Ex 24:3–8; Deut 4:13; Jer 31:31–34; Ezek 37:26–28; Matt 26:28; Heb 7:22; Heb 8:8–13; Heb 10:16–17; Heb 13:20; D&C 22:1–4; D&C 66:2; D&C 76:69; 3 Ne 20:46; Morm 7:10",
   synthesis: {
     summary: "Jesus Christ is the central figure in every covenant God has made with humanity. He is the messenger Malachi prophesied would come suddenly to His temple, the mediator of a new and better covenant described in Hebrews, and the one through whom all the promises of the Abrahamic covenant are fulfilled. Without Christ, no covenant has power — He is the reason covenants work, the one who satisfies justice so that mercy can operate within the covenant relationship.",
     connections: [

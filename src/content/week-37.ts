@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week37: WeekContent = {
   title: "Head of the Church — Christ Leads His People",
   subtitle: "The Church is not an institution that honors Christ — it is His body, directed by His mind, animated by His Spirit.",
-  weekScriptures: "Eph 1:22–23; Eph 4:11–16; Eph 5:23; Col 1:18; D&C 1:30; D&C 115:4; 3 Ne 27:8–10; Matt 16:18; 1 Cor 12:12–27; D&C 84:2; Mosiah 18:17; Acts 2:41–47; D&C 107:91–92; Hel 10:4–7; Amos 3:7; 3 Ne 11:21–22; Moro 6:4; Matt 28:18–20",
+  weekScriptures: "Eph 2:19-22; Eph 4:4-6; Col 2:19; 1 Pet 2:5-6; D&C 10:67-69; D&C 21:4-6; 3 Ne 18:1-7; Mosiah 26:22; Acts 20:28; D&C 20:1-4; D&C 42:11",
   synthesis: {
     summary: "This week examines the doctrine that Jesus Christ is the head of His Church. He is not its figurehead or its historical founder only — He is its living, active leader. The Church exists to do His work, bear His name, administer His ordinances, and extend His reach into the world. Christ directs His Church through prophets, apostles, and the Holy Ghost, and every member of the body has a vital function. Understanding Christ as the Head transforms how we experience Church membership — from institutional obligation to participation in Christ's living body.",
     connections: [

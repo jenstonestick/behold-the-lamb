@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week06: WeekContent = {
   title: "Creator — All Things Were Made by Him",
   subtitle: "Jesus Christ, under the direction of the Father, created the heavens and the earth and all things in them.",
-  weekScriptures: "John 1:1–3; Col 1:15–17; Heb 1:1–3,10–12; Gen 1:1–31; Gen 2:1–7; Moses 1:30–33; Moses 2:1–31; Moses 3:1–7; Abr 4:1–31; Abr 5:1–8; Mosiah 3:8; 2 Ne 2:14; Alma 30:44; D&C 38:1–3; D&C 76:22–24; D&C 88:41–47; Hel 14:12; Jacob 4:9",
+  weekScriptures: "Ps 33:6-9; Ps 104:24-30; Prov 3:19-20; Isa 40:28; Isa 45:12; Jer 10:12; Rev 4:11; Ether 3:15; D&C 14:9; D&C 45:1; Morm 9:17; Mosiah 4:9",
   synthesis: {
     summary: "Christ is not merely a moral teacher or even a Redeemer alone — He is the Creator of heaven and earth. The New Testament, Book of Mormon, and Pearl of Great Price all identify Jesus Christ as the agent through whom the Father organized the cosmos. Understanding Christ as Creator changes how we see the natural world, our physical bodies, and the purpose of mortality itself.",
     connections: [

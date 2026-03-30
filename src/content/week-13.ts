@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week13: WeekContent = {
   title: "Atonement through — The Doctrine at the Heart of Everything",
   subtitle: "The Atonement of Jesus Christ is the central act of all human history — the event that makes repentance possible, justice satisfiable, and mercy real.",
-  weekScriptures: "Alma 7:11–13; Alma 34:8–14; 2 Ne. 2:6–10; 2 Ne. 9:19–26; D&C 19:15–19; Isa. 53:4–6; Heb. 9:11–14; Heb. 2:9–10; 1 Pet. 2:21–24; Rom. 5:6–11; Mosiah 3:5–11; Alma 42:13–15; Alma 42:22–25; Moro. 10:32–33; D&C 45:3–5; 2 Cor. 5:17–21; Gal. 2:20–21; Jacob 4:11–12",
+  weekScriptures: "Lev 16:15-16; Isa 1:18; Matt 26:28; John 1:29; Rom 3:23-25; 1 Jn 1:7; Heb 10:10-14; 1 Jn 2:2; 2 Ne 25:23; Mosiah 4:6-8; Alma 36:17-21; D&C 76:40-42",
   synthesis: {
     summary: "The Atonement of Jesus Christ is the doctrine upon which all other doctrines depend. Without it, the plan of salvation has no mechanism, faith has no object, repentance has no power, and death has no remedy. This week explores what the Atonement is, why it was necessary, how it works, and what it demands of us. We draw from the richest scriptural treatments across the Bible, Book of Mormon, and Doctrine and Covenants to understand the infinite and eternal sacrifice that stands at the center of eternity.",
     connections: [

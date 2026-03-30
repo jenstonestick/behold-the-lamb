@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week48: WeekContent = {
   title: "Glory of Christ — The Radiance of the Eternal Son",
   subtitle: "The glory of Jesus Christ is not borrowed or temporary — it is the inherent, eternal radiance of the Son of God, shared with the Father before the world was.",
-  weekScriptures: "John 17:1–5; John 17:22–24; Heb. 1:1–3; D&C 76:19–24; D&C 93:1–5; D&C 110:1–4; Ex. 33:18–23; Moses 1:1–11; Isa. 6:1–5; 2 Cor. 3:18; 2 Cor. 4:6; Philip. 2:9–11; Rev. 1:12–18; D&C 76:50–58; 3 Ne. 19:25; D&C 88:7–13; JS-H 1:16–17; Matt. 17:1–5",
+  weekScriptures: "Col 1:15-17; John 1:14; Isa 60:19-20; Hab 3:3-4; Acts 26:13-15; D&C 76:70-71; D&C 133:49; Rev 21:23; Alma 19:6; D&C 88:67-68; 1 Tim 6:15-16",
       synthesis: {
     summary: "The glory of Christ is not merely an attribute — it is the very nature of His being. Before the world was, He shared the Father's glory. During His mortal ministry, that glory was veiled but occasionally broke through — on the Mount of Transfiguration, in answered prayers, in moments of divine power. After His resurrection, the full glory was restored and magnified. This week explores Christ's glory in its eternal, revealed, and shared dimensions — and the breathtaking promise that His glory will one day be ours.",
     connections: [

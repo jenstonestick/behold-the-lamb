@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week07: WeekContent = {
   title: "Foreordained & Firstborn — Chosen Before the World Was",
   subtitle: "Christ was the Firstborn of the Father in the spirit and was foreordained to be the Redeemer before the foundations of the earth were laid.",
-  weekScriptures: "Abr 3:22–28; Moses 4:1–4; Rev 13:8; 1 Pet 1:18–20; Eph 1:3–5; Rom 8:29; Col 1:15–18; D&C 93:21–23; D&C 138:55–56; Alma 13:1–9; Jer 1:4–5; Isa 49:1–6; 2 Ne 9:5–9; John 15:16; Heb 5:4–5; Acts 2:23; Ether 3:14",
+  weekScriptures: "Job 38:4-7; D&C 76:13-14; Heb 1:5-6; 2 Tim 1:9; Ps 2:6-7; John 17:24; D&C 49:17; Eph 3:9-11; Titus 1:2; Alma 12:25; 3 Ne 1:14",
   synthesis: {
     summary: "Before the earth was formed, Christ held a unique status: He was the Firstborn of the Father in the spirit, preeminent among all God's children, and foreordained to be the Redeemer. The premortal council in heaven established the plan of salvation, and Christ's voluntary acceptance of the role of Savior was the hinge on which all of human history would turn. Understanding His foreordination reveals that the Atonement was not a contingency plan but the central purpose of creation from the beginning.",
     connections: [

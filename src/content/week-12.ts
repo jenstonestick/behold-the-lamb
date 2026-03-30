@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week12: WeekContent = {
   title: "Resurrection & Ascension — He Is Risen!",
   subtitle: "Easter 2026. The tomb is empty. The Savior lives. Death has been conquered, and the entire plan of salvation is vindicated.",
-  weekScriptures: "Matt 28:1–10; Mark 16:1–8; Luke 24:1–12; John 20:1–18; Luke 24:13–35; Luke 24:36–49; John 20:19–29; 1 Cor. 15:3–8; 1 Cor. 15:20–22; 1 Cor. 15:35–44; Acts 1:1–11; 3 Ne. 11:1–17; Alma 40:21–23; Alma 11:42–44; D&C 76:22–24; D&C 93:33–34; Morm. 9:13–14; 2 Ne. 9:10–15; Mosiah 16:7–9",
+  weekScriptures: "Hosea 13:14; Isa 25:8; Dan 12:2; John 5:28-29; John 11:25-26; John 14:19; Rom 6:9; 1 Cor 15:55-57; Hel 14:15-17; Jacob 4:11; D&C 29:26; D&C 88:14-17",
   synthesis: {
     summary: "This is Easter week — the most important week in the Christian calendar and the culmination of everything studied in Weeks 10 and 11. The Resurrection of Jesus Christ is not a metaphor, not a spiritual idea, not a comforting myth. It is a historical claim: the man who was crucified on Friday was alive, bodily, on Sunday. If the Resurrection happened, it changes everything. Death is not permanent. Sin is not fatal. Separation from God is not final. The tomb is empty, and because it is empty, every promise God has ever made is guaranteed.",
     connections: [

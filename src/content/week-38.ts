@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week38: WeekContent = {
   title: "Family of — The Mortal and Eternal Family of Jesus Christ",
   subtitle: "Christ was born into a real family, shaped by real relationships, and invites all of us into His spiritual family.",
-  weekScriptures: "Matt. 1:18–25; Luke 1:26–38; Luke 2:41–52; Matt. 13:55–56; Mark 3:31–35; John 19:25–27; Mosiah 5:7; Matt. 12:46–50; John 7:1–5; Luke 2:1–7; Mosiah 15:10–13; D&C 25:1; Ps. 69:8; Gal. 4:4–7; Rom. 8:16–17; Ether 3:14",
+  weekScriptures: "Luke 2:1-7; Luke 2:51-52; John 2:1-5; John 6:42; Isa 7:14; Eph 2:19; Eph 3:14-15; Heb 2:11-13; Mosiah 27:25; D&C 39:4; D&C 93:23",
   synthesis: {
     summary: "Jesus Christ was not born into abstraction. He had a mother who pondered, a father who protected, siblings who doubted, and a cousin who prepared His way. His mortal family shaped His experience and fulfilled prophecy. Yet He also defined family in radically spiritual terms — declaring that all who do the will of His Father belong to Him. This week explores both the human and the eternal dimensions of Christ's family.",
     connections: [

@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week09: WeekContent = {
   title: "Mission of — The Purpose Behind Everything He Did",
   subtitle: "Jesus Christ came with a specific mission: to do the will of the Father, to bring salvation, and to invite all to come unto Him.",
-  weekScriptures: "Luke 4:16–21; John 6:38–40; Luke 19:10; 2 Ne. 2:6–8; Mosiah 15:8–9; 3 Ne. 27:13–15; John 10:10–18; D&C 18:10–12; John 18:37; Alma 42:15; D&C 11:28; Moses 1:39; John 17:1–5; 3 Ne. 27:21–22; Jacob 1:7; Alma 34:8–10; Heb. 10:5–10; D&C 138:1–4; 1 Tim. 2:3–6; 2 Ne. 26:24–28",
+  weekScriptures: "Matt 1:21; Mark 10:45; John 12:27; 1 Jn 3:8; Alma 11:40; D&C 43:29; D&C 76:40-42; Hel 5:9-11; Morm 9:12-13; Isa 61:1-2; Acts 3:25-26",
   synthesis: {
     summary: "Jesus Christ did not come to earth by accident or impulse. He came with a clearly defined mission given by the Father: to seek and save the lost, to fulfill the law, to lay down His life, and to bring to pass immortality and eternal life. Every miracle, every parable, every step toward Gethsemane and Golgotha was part of that purpose. Understanding His mission reframes everything He said and did — not as random acts of kindness but as the deliberate execution of the plan of salvation.",
     connections: [

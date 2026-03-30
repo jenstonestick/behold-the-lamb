@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week08: WeekContent = {
   title: "Jehovah — The God of the Old Testament",
   subtitle: "The God who spoke to Abraham, parted the Red Sea, and thundered from Sinai is the premortal Jesus Christ.",
-  weekScriptures: "Ex 6:2–3; Ex 3:13–15; Isa 43:3,10–11; Isa 44:6; Isa 45:5–6,21–22; Ps 83:18; John 8:56–58; 3 Ne 15:3–5; D&C 110:1–4; Abr 2:6–8; 1 Cor 10:1–4; Deut 32:3–4; Ps 18:2,31; Isa 26:4; 2 Sam 22:2–3,32; Mosiah 3:5; Hel 8:22–23; Morm 9:10–12; Abr 1:15–16; D&C 29:1; D&C 38:1",
+  weekScriptures: "Ex 15:2-3; Isa 41:14; Isa 48:17; Isa 54:5; Hosea 13:4; Zech 14:9; Rev 1:8; 3 Ne 11:14; Ether 4:7-8; D&C 39:1-2; D&C 43:34; Mosiah 7:19",
   synthesis: {
     summary: "One of the most distinctive and consequential teachings of Restoration theology is the identification of Jehovah — the covenant God of Israel throughout the Old Testament — as the premortal Jesus Christ. This means that every divine act recorded in the Hebrew Bible, from the creation to the Exodus to the prophetic visions, was performed by the same being who would later be born in Bethlehem. The God of Abraham, Isaac, and Jacob is Jesus of Nazareth.",
     connections: [

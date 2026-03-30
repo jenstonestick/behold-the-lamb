@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week33: WeekContent = {
   title: "Relationship with the Father — One in Purpose, Distinct in Person",
   subtitle: "Christ's relationship with God the Father is the most important relationship in the universe — and the model for every other.",
-  weekScriptures: "John 17:1–5; John 10:30; John 14:28; John 5:30; 3 Ne 11:27; Matt 26:39; John 8:28–29; D&C 130:22; Philip 2:5–11; 1 Cor 15:24–28; Mosiah 15:1–7; 3 Ne 19:23; D&C 93:3–5; Moses 1:6; John 14:9–11; Heb 1:3; Luke 22:42; 3 Ne 28:10",
+  weekScriptures: "John 1:18; John 6:38; John 7:16-17; John 12:49-50; John 16:28; Matt 11:27; Luke 10:22; 3 Ne 20:35; D&C 76:20-24; D&C 93:16-17; Mosiah 5:7",
   synthesis: {
     summary: "This week examines the profound relationship between Jesus Christ and His Father. Scripture reveals that they are perfectly united in purpose, will, and love — yet distinct as individual beings. Christ consistently defers to the Father, credits the Father, and seeks the Father's glory. This relationship is not merely theological information; it is the pattern for our own relationship with God. Christ's perfect submission to the Father's will is the engine that drives the entire plan of salvation.",
     connections: [

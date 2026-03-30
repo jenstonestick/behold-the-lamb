@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week02: WeekContent = {
   title: "Advocate & Mediator",
   subtitle: "Christ stands between us and the demands of justice \u2014 not as a bystander, but as our personal representative before the Father.",
-  weekScriptures: "D&C 45:3\u20135; 1 Jn. 2:1\u20132; Heb. 7:25; 1 Tim. 2:5\u20136; 2 Ne. 2:27\u201328; D&C 76:69; Heb. 4:14\u201316; Alma 7:11\u201313; D&C 62:1; Heb. 9:15; 3 Ne. 9:17\u201320; Mosiah 15:8\u20139; D&C 29:5; D&C 110:4; Moro. 7:27\u201328; Moro. 10:32\u201333; Rom. 8:31\u201334; Isa. 53:12; 2 Ne. 2:9\u201310; D&C 38:4",
+  weekScriptures: "John 14:16-17; Heb 8:6; Heb 12:24; D&C 76:69; Gal 3:19-20; D&C 45:3-5; Jacob 4:11; Mosiah 14:12; D&C 76:41-42; 2 Ne 2:27-28; Alma 42:15",
   synthesis: {
     summary: "Jesus Christ is not just a Savior in the abstract \u2014 He is an active Advocate who speaks to the Father on our behalf, and a Mediator who bridges the otherwise impassable gap between fallen humanity and a perfect God. His advocacy is personal, ongoing, and rooted in His suffering.",
     connections: [
