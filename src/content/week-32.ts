@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week32: WeekContent = {
   title: "Divine Sonship — The Only Begotten of the Father",
   subtitle: "Christ's sonship is not honorary or adoptive — it is literal, unique, and the foundation of His saving power.",
-  weekScriptures: "Matt 16:16; Mark 1:1; John 10:36; John 20:31; Acts 9:20; Rom 1:3-4; Gal 4:4; Heb 4:14; 1 Jn 5:5; 2 Ne 25:19; Mosiah 3:8; D&C 68:6",
+  weekScriptures: "Matt 16:16; Mark 1:1; John 10:36; John 20:31; Acts 9:20; Rom 1:3-4; Gal 4:4; Heb 4:14; 1 Jn 5:5; 2 Ne 25:19; Mosiah 3:8; D&C 68:6; Col 1:13-15; D&C 76:20-24",
   synthesis: {
     summary: "This week explores the doctrine that Jesus Christ is literally the Son of God — the Only Begotten of the Father in the flesh. His divine sonship is not metaphorical but the actual basis of His power to atone, to create, and to redeem. Every dispensation has proclaimed this truth, from the Psalms to the Restoration. Understanding Christ's unique relationship to the Father transforms how we understand His mission, His authority, and our own potential as children of God.",
     connections: [

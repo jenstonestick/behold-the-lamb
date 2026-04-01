@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week31: WeekContent = {
   title: "Only Begotten Son — The Unique and Singular Christ",
   subtitle: "There is only one who holds this title — the Only Begotten of the Father, full of grace and truth, whose sacrifice could be made by no other.",
-  weekScriptures: "Ps 2:7; John 1:49; 2 Ne 25:12; Alma 9:26; D&C 49:5; D&C 76:13; D&C 93:17; Heb 11:17; 1 Ne 11:18-21; Rom 8:32; Col 1:13-15",
+  weekScriptures: "Ps 2:7; John 1:49; 1 Ne 11:18-21; 2 Ne 25:12; Alma 9:26; D&C 49:5; D&C 76:13; D&C 93:17; Heb 11:17-19; Rom 8:32; Col 1:13-15; Gen 22:2; 2 Ne 9:5; 3 Ne 11:7",
   synthesis: {
     summary: "The title 'Only Begotten Son' sets Jesus Christ apart from every other being who has ever lived. All humans are children of God in spirit, but only Christ is the Only Begotten of the Father in the flesh. This unique status is not a mere theological distinction — it is what gave His Atonement infinite power. Because He was the Only Begotten, His sacrifice could accomplish what no other sacrifice could: the redemption of all humanity. Restoration scripture uses this title with particular frequency and clarity, making it a cornerstone of Latter-day Saint Christology.",
     connections: [

@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week25: WeekContent = {
   title: "Judge — Christ as the Eternal Judge",
   subtitle: "Jesus Christ will judge all humanity — and His judgment is perfect because He knows perfectly, loves perfectly, and has suffered perfectly.",
-  weekScriptures: "Ps 96:13; Isa 33:22; Matt 12:36-37; Matt 16:27; John 5:45; Acts 17:31; Rom 2:5-8; 2 Cor 5:10; Heb 9:27; Rev 22:12; Alma 5:22; Alma 33:22; D&C 19:3; D&C 29:12",
+  weekScriptures: "Ps 96:13; Isa 33:22; Matt 12:36-37; Matt 16:27; Acts 17:31; Rom 2:5-8; 2 Cor 5:10; Heb 9:27; Rev 22:12; Alma 5:22; Alma 33:22; D&C 19:3; D&C 29:12; Alma 42:22-25",
   synthesis: {
     summary: "The doctrine of Christ as Judge is not a threat but a promise: the one who will judge you is the one who died for you. His judgment is not arbitrary or punitive — it is a perfect assessment by the Being who knows every heart, has felt every pain, and has already paid the price for every sin. Understanding Christ as Judge brings both sobriety and hope, because His justice and His mercy are equally infinite.",
     connections: [

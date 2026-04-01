@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week36: WeekContent = {
   title: "Taking the Name of — Covenant Identity in Christ",
   subtitle: "To take upon us the name of Christ is not a formality — it is a transformation of identity, loyalty, and belonging.",
-  weekScriptures: "Deut 28:10; Isa 43:7; Isa 65:15; Acts 4:12; Rom 6:3-4; 2 Ne 31:20; Mosiah 25:23; Alma 46:15; 3 Ne 27:3-4; D&C 20:37; D&C 115:4; Moro 6:3",
+  weekScriptures: "Deut 28:10; Isa 43:7; Isa 65:15; Acts 4:12; Rom 6:3-4; 2 Ne 31:20; Mosiah 25:23; Alma 46:15; 3 Ne 27:3-4; D&C 20:37; D&C 115:4; Moro 6:3; 2 Ne 31:17-18; Mosiah 6:2",
   synthesis: {
     summary: "This week explores the profound covenant act of taking upon ourselves the name of Jesus Christ. This happens at baptism, is renewed each week at the sacrament, and shapes every dimension of the disciple's life. Taking His name means accepting His identity as our own — becoming His people, bearing His cause, and representing Him in the world. It is the covenantal entry point into the divine relationship studied in preceding weeks and the practical expression of everything we have learned about Christ's nature, His Spirit, and His invitation to know Him.",
     connections: [

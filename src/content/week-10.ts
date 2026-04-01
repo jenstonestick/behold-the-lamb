@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week10: WeekContent = {
   title: "Betrayal & Trials — The Darkest Hours Before the Cross",
   subtitle: "In the span of a single night, Jesus was betrayed by a friend, abandoned by His disciples, and condemned by courts that had no authority over Him.",
-  weekScriptures: "Zech 11:12-13; Ps 55:12-14; Matt 26:56; Matt 27:3-5; Mark 14:50-52; Luke 22:31-34; Isa 50:6; Ps 35:11; Acts 3:13-15; John 13:1-5; 2 Ne 10:3-5; Ps 109:2-5",
+  weekScriptures: "Zech 11:12-13; Ps 55:12-14; Ps 35:11; Ps 109:2-5; Isa 50:6; Matt 26:56; Matt 27:3-5; Mark 14:50-52; Luke 22:31-34; John 13:1-5; Acts 3:13-15; 2 Ne 10:3-5; Mosiah 3:9",
   synthesis: {
     summary: "The betrayal, arrest, and trials of Jesus Christ constitute some of the most sobering passages in all of scripture. In a single night, every form of human failure converges on the sinless Son of God: treachery from a trusted disciple, abandonment by friends, false witnesses, corrupt religious proceedings, cowardly political maneuvering, and mob violence. Yet through it all, Christ remained composed, purposeful, and obedient. He was not a victim swept along by events — He was a willing participant in a divinely orchestrated plan, submitting to the very injustice He had the power to prevent.",
     connections: [

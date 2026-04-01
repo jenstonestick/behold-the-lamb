@@ -1,19 +1,23 @@
 import type { AppState } from '../types';
-import { DAYS, WEEKS } from '../utils';
+import type { DynWeekMeta } from '../utils';
+import { DAYS } from '../utils';
 import { content } from '../content';
 
 interface Props {
-  w: number;
+  w: number;  // position (1-50)
   st: AppState;
+  schedule: number[];
+  weeksMeta: DynWeekMeta[];
   tog: (key: 'done' | 'bm', w: number, d: number) => void;
   wProg: (w: number) => number;
   goDay: (w: number, d: number) => void;
   goWeek: (w: number) => void;
 }
 
-export default function WeekView({ w, st, tog, wProg, goDay, goWeek }: Props) {
-  const wk = WEEKS[w - 1];
-  const c = content[w];
+export default function WeekView({ w, st, schedule, weeksMeta, tog, wProg, goDay, goWeek }: Props) {
+  const contentWeek = schedule[w - 1];
+  const wk = weeksMeta[w - 1];
+  const c = content[contentWeek];
   const prog = wProg(w);
 
   return (
@@ -29,8 +33,8 @@ export default function WeekView({ w, st, tog, wProg, goDay, goWeek }: Props) {
       {c && (
         <div style={{ background: 'var(--surface)', borderRadius: 6, padding: '8px 14px', marginBottom: '1.25rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: 12, color: 'var(--stone)' }}>{prog}/7 days</span>
-          <div style={{ width: 80, height: 4, borderRadius: 2, background: 'var(--gold)', opacity: 0.3, overflow: 'hidden' }}>
-            <div style={{ height: '100%', width: `${Math.round(prog / 7 * 100)}%`, borderRadius: 2, background: 'var(--gold)', transition: 'width 0.3s' }} />
+          <div style={{ width: 80, height: 4, borderRadius: 2, background: 'var(--surface)', border: '0.5px solid var(--gold)', overflow: 'hidden' }}>
+            <div style={{ height: '100%', width: `${Math.round(prog / 7 * 100)}%`, borderRadius: 2, background: 'var(--olive)', transition: 'width 0.3s' }} />
           </div>
         </div>
       )}
@@ -44,14 +48,13 @@ export default function WeekView({ w, st, tog, wProg, goDay, goWeek }: Props) {
       {!c && (
         <div style={{ textAlign: 'center', padding: '2.5rem 1rem', border: '0.5px dashed var(--gold)', borderRadius: 8 }}>
           <div style={{ fontSize: 14, color: 'var(--stone)', fontFamily: 'var(--font-serif)' }}>Content coming soon</div>
-          <div style={{ fontSize: 12, color: 'var(--stone)', marginTop: 6, opacity: 0.7 }}>Weeks 1–4 are available</div>
         </div>
       )}
 
       {c && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
           {c.days.map((dd, i) => {
-            const dk = `${w}-${i}`;
+            const dk = `${contentWeek}-${i}`;
             const done = st.done[dk];
             const bm = st.bm[dk];
             return (

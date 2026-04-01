@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week39: WeekContent = {
   title: "Prophecies about — Ancient Witnesses of Christ's Coming",
   subtitle: "Centuries before His birth, prophets on two continents saw, named, and described the Messiah in astonishing detail.",
-  weekScriptures: "Isa 11:1-5; Isa 42:1-4; Isa 61:1-3; Jer 23:5-6; Ezek 34:23-24; Zech 13:6; Ps 16:10; Ps 110:1-4; 1 Ne 19:10; 2 Ne 6:9; Hel 8:16-20",
+  weekScriptures: "Isa 11:1-5; Isa 42:1-4; Isa 61:1-3; Jer 23:5-6; Ezek 34:23-24; Zech 13:6; Ps 16:10; Ps 110:1-4; 1 Ne 19:10; 2 Ne 6:9; Hel 8:16-20; Isa 40:3-5; Jer 33:14-16",
   synthesis: {
     summary: "The messianic prophecies of the Old Testament and the Book of Mormon constitute one of the most remarkable bodies of evidence in religious history. Prophets separated by centuries and continents described the same Person — His birthplace, His manner of coming, His suffering, His mission, and His triumph. This convergence is not coincidence. It is the signature of a God who declares the end from the beginning and who prepared the way for His Son across every dispensation.",
     connections: [

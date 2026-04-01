@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week34: WeekContent = {
   title: "Spirit of — The Light of Christ in All Things",
   subtitle: "Before the Gift of the Holy Ghost, there is a light that fills the immensity of space — and it proceeds from the presence of Christ.",
-  weekScriptures: "Rom 8:9-11; Gal 5:22-25; 1 Jn 4:13; D&C 11:12-13; D&C 93:36; Jacob 4:13; Alma 34:38; 3 Ne 9:20; Moro 8:16; D&C 8:2-3; D&C 42:14",
+  weekScriptures: "Rom 8:9-11; Gal 5:22-25; 1 Jn 4:13; D&C 11:12-13; D&C 93:36; Jacob 4:13; Alma 34:38; 3 Ne 9:20; Moro 8:16; D&C 8:2-3; D&C 42:14; Moro 10:8-9; D&C 46:11-12",
   synthesis: {
     summary: "This week explores the Spirit of Christ — often called the Light of Christ — a divine influence that fills all creation and is given to every person born into the world. It is the source of conscience, moral intuition, and the capacity to recognize truth. It is distinct from the Gift of the Holy Ghost but works in concert with it. Understanding this doctrine reveals that God has not left any of His children without access to His light, and it provides a framework for understanding how truth is recognized across all cultures and traditions.",
     connections: [

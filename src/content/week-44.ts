@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week44: WeekContent = {
   title: "Millennial Reign — The King Shall Reign in Righteousness",
   subtitle: "Christ will return to earth and reign personally for a thousand years of peace, justice, and glory.",
-  weekScriptures: "Isa 35:1-2; D&C 63:49-51; Rev 21:1-4; A of F 1:10; Isa 25:8-9; D&C 97:21; Hab 2:14; Isa 60:1-3; D&C 88:110-111; 2 Ne 30:12-18",
+  weekScriptures: "Isa 25:8-9; Isa 35:1-2; Isa 60:1-3; Isa 24:23; Dan 2:44; Hab 2:14; 2 Ne 30:12-18; D&C 63:49-51; D&C 88:110-111; D&C 97:21; Rev 21:1-4; A of F 1:10",
   synthesis: {
     summary: "The millennial reign of Christ is not a metaphor — it is a literal, prophesied period when the Savior will personally govern the earth. Old Testament prophets, Book of Mormon seers, and modern revelation all describe a world transformed: Satan bound, death conquered for the righteous, the earth renewed, and Christ enthroned. The Millennium is the culmination of every covenant, the answer to every prayer for justice, and the fulfillment of every hope for peace.",
     connections: [

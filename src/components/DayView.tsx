@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import type { AppState, WeekContent, ScriptureRef } from '../types';
-import { DAYS, WEEKS, scrUrl, refLabel, refStringToUrl } from '../utils';
+import type { DynWeekMeta } from '../utils';
+import { DAYS, scrUrl, refLabel, refStringToUrl } from '../utils';
 import { getVerses, type VerseEntry } from '../scripture-lookup';
 import Sec from './Sec';
 import Synth from './Synth';
@@ -8,7 +9,6 @@ import { content } from '../content';
 
 /** Parse a weekScriptures string into clickable links */
 function renderWeekScriptures(text: string) {
-  // Split on semicolons, trim each ref, and make it a link
   const refs = text.split(';').map(s => s.trim()).filter(Boolean);
   return refs.map((ref, i) => {
     const url = refStringToUrl(ref);
@@ -40,9 +40,11 @@ function renderVerseText(text: string) {
 }
 
 interface Props {
-  w: number;
+  w: number;  // position (1-50)
   d: number;
   st: AppState;
+  schedule: number[];
+  weeksMeta: DynWeekMeta[];
   tog: (key: 'done' | 'bm', w: number, d: number) => void;
   setNote: (w: number, d: number, txt: string) => void;
   goDay: (w: number, d: number) => void;
@@ -132,10 +134,11 @@ function ScriptureCard({ s }: { s: ScriptureRef }) {
   );
 }
 
-export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
-  const c: WeekContent | undefined = content[w];
-  const wk = WEEKS[w - 1];
-  const k = `${w}-${d}`;
+export default function DayView({ w, d, st, schedule, weeksMeta, tog, setNote, goDay }: Props) {
+  const contentWeek = schedule[w - 1];
+  const c: WeekContent | undefined = content[contentWeek];
+  const wk = weeksMeta[w - 1];
+  const k = `${contentWeek}-${d}`;
   const done = st.done[k];
   const bm = st.bm[k];
   const note = st.notes[k] || '';
@@ -192,21 +195,24 @@ export default function DayView({ w, d, st, tog, setNote, goDay }: Props) {
 
       {/* Day pills */}
       <div style={{ display: 'flex', gap: 4, marginBottom: '1.25rem', flexWrap: 'wrap' }}>
-        {c.days.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => goDay(w, i)}
-            style={{
-              fontSize: 11, padding: '4px 8px', borderRadius: 6, cursor: 'pointer',
-              background: i === d ? 'var(--olive)' : st.done[`${w}-${i}`] ? 'var(--olive-light)' : 'transparent',
-              color: i === d ? 'var(--cream)' : st.done[`${w}-${i}`] ? 'var(--olive)' : 'var(--stone)',
-              border: i === d ? 'none' : st.done[`${w}-${i}`] ? '0.5px solid var(--olive)' : '0.5px solid var(--gold)',
-              fontWeight: i === d ? 500 : 400,
-            }}
-          >
-            {DAYS[i].slice(0, 3)}
-          </button>
-        ))}
+        {c.days.map((_, i) => {
+          const dayDone = st.done[`${contentWeek}-${i}`];
+          return (
+            <button
+              key={i}
+              onClick={() => goDay(w, i)}
+              style={{
+                fontSize: 11, padding: '4px 8px', borderRadius: 6, cursor: 'pointer',
+                background: i === d ? 'var(--olive)' : dayDone ? 'var(--olive-light)' : 'transparent',
+                color: i === d ? 'var(--cream)' : dayDone ? 'var(--olive)' : 'var(--stone)',
+                border: i === d ? 'none' : dayDone ? '0.5px solid var(--olive)' : '0.5px solid var(--gold)',
+                fontWeight: i === d ? 500 : 400,
+              }}
+            >
+              {DAYS[i].slice(0, 3)}
+            </button>
+          );
+        })}
       </div>
 
       {/* Scripture */}

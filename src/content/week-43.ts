@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week43: WeekContent = {
   title: "Second Coming — The Return of the King",
   subtitle: "Every prophecy, every ordinance, and every dispensation converges on one event: the glorious return of Jesus Christ to reign on the earth.",
-  weekScriptures: "D&C 34:7-9; Joel 2:30-31; Isa 13:9-13; D&C 49:6-7; Mark 13:24-27; D&C 133:17-22; Rev 6:12-17; 2 Ne 26:3; D&C 45:26-30; D&C 130:14-17; Hel 14:20-27",
+  weekScriptures: "Isa 40:10; Isa 66:15-16; Dan 7:13-14; Zech 12:10; Matt 16:27; Matt 26:64; Luke 21:25-28; 2 Thes 1:7-10; Heb 9:28; James 5:7-8; Rev 22:12; D&C 1:12; D&C 39:20-21",
   synthesis: {
     summary: "The Second Coming of Jesus Christ is the culminating event of mortal history. He will return in glory, with power, to a world that has been warned and prepared by His servants. The signs will be unmistakable. The wicked will mourn. The righteous will be gathered. The earth itself will be renewed. This week studies the scriptural witness of that return — not as speculation about timing but as preparation of the heart.",
     connections: [

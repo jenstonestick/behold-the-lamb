@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week46: WeekContent = {
   title: "Davidic Descent — Son of David, King of Kings",
   subtitle: "Christ's lineage through David was not incidental — it fulfilled ancient covenants and established His right to an eternal throne.",
-  weekScriptures: "Isa 9:6-7; Ps 89:3-4; Ps 89:35-37; Amos 9:11; Zech 3:8; Matt 9:27; Matt 15:22; Matt 12:23; Mark 10:47-48; Luke 1:69; Jer 33:15-17",
+  weekScriptures: "Ps 89:3-4; Ps 89:35-37; Isa 9:6-7; Jer 33:15-17; Amos 9:11; Zech 3:8; Matt 9:27; Matt 12:23; Matt 15:22; Mark 10:47-48; Luke 1:69; Luke 18:38-39",
   synthesis: {
     summary: "God promised David that his throne would be established forever. A thousand years later, a child was born in Bethlehem — David's city — through David's lineage. Both Matthew and Luke trace Christ's genealogy to David, establishing His legal and biological right to the throne of Israel. But Christ is more than a political heir; He is the eternal King whose reign will never end. The Davidic covenant finds its ultimate fulfillment not in a mortal monarchy but in the millennial and eternal kingship of Jesus Christ.",
     connections: [

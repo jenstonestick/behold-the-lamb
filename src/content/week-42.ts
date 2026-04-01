@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week42: WeekContent = {
   title: "Appearances, Postmortal — The Risen Christ Among His People",
   subtitle: "After His resurrection, Christ appeared to many — on roads, in rooms, at the seashore, and on another continent — proving that death had no hold on Him.",
-  weekScriptures: "Luke 24:50-53; Acts 10:40-41; Mark 16:14-18; John 20:30-31; 1 Cor 15:12-20; D&C 129:1-3; Acts 9:3-6; 3 Ne 11:18-22; D&C 76:119; Matt 28:16-17",
+  weekScriptures: "Mark 16:9; Mark 16:14-18; Luke 24:50-53; John 20:30-31; Acts 9:3-6; Acts 10:40-41; 1 Cor 15:12-19; 3 Ne 10:18-19; 3 Ne 11:18-22; D&C 76:119; D&C 129:1-3; Matt 28:16-17",
   synthesis: {
     summary: "The resurrection of Jesus Christ is the most consequential event in human history. If it happened, everything changes. The postmortal appearances of Christ — to Mary, to the apostles, to five hundred at once, to an entire Nephite civilization, and to prophets in the latter days — constitute the evidentiary foundation of Christianity. This week studies each appearance not as a story but as a testimony, asking what each one reveals about the nature of the risen Lord and His relationship with His followers.",
     connections: [

@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week22: WeekContent = {
   title: "Temptation of — Christ in the Wilderness",
   subtitle: "Jesus was tempted in all things, yet without sin — and His victory over temptation is essential to His power to help us overcome our own.",
-  weekScriptures: "Gen 3:1-6; 2 Ne 2:17-18; 2 Ne 28:20-22; Mosiah 16:3-5; Alma 34:39; Hel 5:12; 3 Ne 18:15; D&C 10:5; D&C 23:1; D&C 31:12; Eph 6:11-13; 1 Pet 5:8-9; Rev 12:10-11",
+  weekScriptures: "Gen 3:1-6; 2 Ne 2:17-18; 2 Ne 28:20-22; Mosiah 16:3-5; Alma 34:39; Hel 5:12; D&C 10:5; D&C 23:1; D&C 31:12; Eph 6:11-13; 1 Pet 5:8-9; Rev 12:10-11; Moses 1:12-22",
   synthesis: {
     summary: "The temptation of Jesus Christ in the wilderness was not a random trial but a defining confrontation between the Son of God and the adversary. Each temptation targeted a specific dimension of Christ's mission — His physical needs, His divine identity, and His relationship with the Father. Christ's perfect resistance demonstrated that temptation can be overcome, and His experience made Him uniquely qualified to succor every person who faces trial. His victory is not just an example — it is the source of power available to every disciple.",
     connections: [

@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week18: WeekContent = {
   title: "Light of the World & Rock — Foundation and Illumination",
   subtitle: "Christ is both the light that guides and the rock that holds — the source of vision and the ground of stability.",
-  weekScriptures: "Ps 119:105; Isa 42:6; Isa 49:6; John 1:4-5; John 3:19-21; 2 Pet 1:19; D&C 6:21; D&C 93:2; 1 Ne 17:45-46; Alma 38:9; Moro 7:18-19; Deut 32:4; Isa 26:4",
+  weekScriptures: "Matt 5:14-16; John 1:4-9; Isa 9:2; Isa 42:6; Isa 49:6; 2 Pet 1:19; D&C 6:21; D&C 93:2; 1 Cor 3:11; Deut 32:3-4; Isa 28:16; Alma 38:9; Ether 4:12; 1 Ne 17:13",
   synthesis: {
     summary: "Two of the most enduring scriptural images for Christ are light and rock. Light reveals, guides, warms, and dispels darkness. Rock supports, stabilizes, endures, and provides defense. Together they describe a Savior who both illuminates the path and provides an unshakable foundation for those who walk it. This week explores both metaphors in depth, tracing them through the Old Testament, the Gospels, the Book of Mormon, and modern revelation.",
     connections: [

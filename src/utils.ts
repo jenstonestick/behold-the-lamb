@@ -64,8 +64,117 @@ export function refStringToUrl(ref: string): string | null {
   return url;
 }
 
-export function getCurrent(): { week: number; day: number } {
-  const start = new Date(2026, 0, 18); // Jan 18, 2026
+/* ── Easter date (Anonymous Gregorian algorithm) ── */
+export function getEasterDate(year: number): Date {
+  const a = year % 19;
+  const b = Math.floor(year / 100);
+  const c = year % 100;
+  const d = Math.floor(b / 4);
+  const e = b % 4;
+  const f = Math.floor((b + 8) / 25);
+  const g = Math.floor((b - f + 1) / 3);
+  const h = (19 * a + b - d - g + 15) % 30;
+  const i = Math.floor(c / 4);
+  const k = c % 4;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7;
+  const m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const month = Math.floor((h + l - 7 * m + 114) / 31) - 1;
+  const day = ((h + l - 7 * m + 114) % 31) + 1;
+  return new Date(year, month, day);
+}
+
+/* ── Schedule engine: maps position (0-indexed) → content week (1-50) ── */
+export function computeSchedule(startDate: Date): number[] {
+  const MS_DAY = 86400000;
+  const planEnd = new Date(startDate.getTime() + 50 * 7 * MS_DAY);
+
+  const weekOf = (d: Date) => Math.floor((d.getTime() - startDate.getTime()) / (7 * MS_DAY));
+
+  // Find Easter in plan span
+  let easterDate: Date | null = null;
+  for (let y = startDate.getFullYear(); y <= planEnd.getFullYear(); y++) {
+    const e = getEasterDate(y);
+    if (e >= startDate && e < planEnd) { easterDate = e; break; }
+  }
+
+  // Find Christmas in plan span
+  let christmasDate: Date | null = null;
+  for (let y = startDate.getFullYear(); y <= planEnd.getFullYear(); y++) {
+    const c = new Date(y, 11, 25);
+    if (c >= startDate && c < planEnd) { christmasDate = c; break; }
+  }
+
+  const schedule: (number | null)[] = new Array(50).fill(null);
+  const placed = new Set<number>();
+
+  // Place Easter arc: content 10-13, so week 12 (Resurrection) lands on Easter
+  if (easterDate) {
+    const ep = weekOf(easterDate);
+    const arc = [10, 11, 12, 13];
+    const offsets = [-2, -1, 0, 1];
+    for (let j = 0; j < 4; j++) {
+      const pos = ep + offsets[j];
+      if (pos >= 0 && pos < 50 && schedule[pos] === null) {
+        schedule[pos] = arc[j];
+        placed.add(arc[j]);
+      }
+    }
+  }
+
+  // Place Christmas arc: 48 (Glory), 49 (Birth), 50 (Messiah)
+  if (christmasDate) {
+    const cp = weekOf(christmasDate);
+    // Place 49 on Christmas week
+    if (cp >= 0 && cp < 50 && schedule[cp] === null) {
+      schedule[cp] = 49; placed.add(49);
+      // 48 before, 50 after
+      if (cp > 0 && schedule[cp - 1] === null) { schedule[cp - 1] = 48; placed.add(48); }
+      if (cp < 49 && schedule[cp + 1] === null) { schedule[cp + 1] = 50; placed.add(50); }
+    }
+  }
+
+  // Fill remaining content weeks in order
+  const remaining: number[] = [];
+  for (let w = 1; w <= 50; w++) if (!placed.has(w)) remaining.push(w);
+
+  let ri = 0;
+  for (let i = 0; i < 50; i++) {
+    if (schedule[i] === null) schedule[i] = remaining[ri++];
+  }
+
+  return schedule as number[];
+}
+
+/* ── Date range string for a position ── */
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+export function getWeekDates(pos: number, startDate: Date): string {
+  const MS_DAY = 86400000;
+  const ws = new Date(startDate.getTime() + (pos - 1) * 7 * MS_DAY);
+  const we = new Date(ws.getTime() + 6 * MS_DAY);
+  if (ws.getMonth() === we.getMonth()) {
+    return `${MONTHS[ws.getMonth()]} ${ws.getDate()}–${we.getDate()}`;
+  }
+  return `${MONTHS[ws.getMonth()]} ${ws.getDate()}–${MONTHS[we.getMonth()]} ${we.getDate()}`;
+}
+
+/* ── Build dynamic week metadata from schedule ── */
+export interface DynWeekMeta {
+  pos: number;         // position 1-50
+  contentWeek: number; // which content week (1-50)
+  dates: string;       // computed date range
+  topic: string;       // topic from content week
+}
+export function buildWeeksMeta(schedule: number[], startDate: Date): DynWeekMeta[] {
+  return schedule.map((cw, i) => ({
+    pos: i + 1,
+    contentWeek: cw,
+    dates: getWeekDates(i + 1, startDate),
+    topic: TOPIC_BY_WEEK[cw] || `Week ${cw}`,
+  }));
+}
+
+export function getCurrent(startDate?: Date): { week: number; day: number } {
+  const start = startDate || new Date(2026, 0, 18);
   const now = new Date();
   const diffDays = Math.floor((now.getTime() - start.getTime()) / 86400000);
   if (diffDays < 0) return { week: 1, day: 0 };
@@ -75,6 +184,24 @@ export function getCurrent(): { week: number; day: number } {
 }
 
 export const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+/* ── Topic lookup by content week ── */
+const TOPIC_BY_WEEK: Record<number, string> = {
+  1:"Jesus Christ",2:"Advocate & Mediator",3:"Anointed, the",4:"Antemortal Existence",
+  5:"Appearances, Antemortal",6:"Creator",7:"Foreordained & Firstborn",8:"Jehovah",
+  9:"Mission of",10:"Betrayal & Trials",11:"Crucifixion & Death",12:"Resurrection & Ascension",
+  13:"Atonement through",14:"Redeemer & Savior",15:"Deliverer",16:"Power of",
+  17:"Glory of",18:"Light of the World & Rock",19:"Exemplar",20:"Teaching Mode",
+  21:"Baptism of",22:"Temptation of",23:"Authority of",24:"Testimony of",
+  25:"Judge",26:"King & Lord",27:"Lamb of God",28:"Messenger of the Covenant",
+  29:"Son of God",30:"Son of Man",31:"Only Begotten Son",32:"Divine Sonship",
+  33:"Relationship with the Father",34:"Spirit of",35:"Second Comforter",
+  36:"Taking the Name of",37:"Head of the Church",38:"Family of",
+  39:"Prophecies about",40:"Types in Anticipation",41:"Types in Memory",
+  42:"Appearances, Postmortal",43:"Second Coming",44:"Millennial Reign",
+  45:"Seed of",46:"Davidic Descent",47:"Good Shepherd",48:"Glory of",
+  49:"Birth of",50:"Messiah",
+};
 
 export const WEEKS = [
   { week:1, dates:"Jan 18–24", topic:"Jesus Christ" },

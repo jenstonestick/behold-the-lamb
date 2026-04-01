@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week19: WeekContent = {
   title: "Exemplar — The Perfect Pattern",
   subtitle: "Christ is not only the Savior who rescues us but the Exemplar who shows us how to live — the pattern for every virtue, every relationship, and every response to suffering.",
-  weekScriptures: "John 4:34; John 8:29; John 10:11; John 17:4; Matt 9:36; Mark 1:35; Luke 6:12-13; Eph 5:2; Col 3:13; 1 Jn 3:16; 2 Ne 31:16-17; Mosiah 18:8-10; Alma 5:19",
+  weekScriptures: "John 4:34; John 8:29; John 10:11; John 17:4; Matt 9:36; Mark 1:35; Luke 6:12-13; Eph 5:2; Col 3:13; 1 Jn 3:16; 2 Ne 31:16-17; Morm 7:10; D&C 93:12-14",
   synthesis: {
     summary: "Christ is the perfect example — not merely in the sense that He avoided sin, but in the active sense that He demonstrated the right way to pray, serve, suffer, forgive, love, and submit to the Father's will. His example is not an impossible standard meant to discourage but a living pattern meant to be followed. He said 'Follow me,' and then walked the path first so we could see where to put our feet. This week examines the specific ways Christ exemplified the life He invites us to live.",
     connections: [

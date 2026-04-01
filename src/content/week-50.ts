@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week50: WeekContent = {
   title: "Messiah — The Anointed One, the Fulfillment of All Things",
   subtitle: "The final week: Christ is the Messiah, the Anointed One — the answer to every prophecy, every covenant, and every longing of the human heart.",
-  weekScriptures: "John 7:26-27; Matt 11:2-6; Luke 2:11; Acts 4:26-28; Acts 17:2-3; D&C 20:1; 1 Jn 2:22; 1 Jn 5:1; 2 Ne 2:26; Mosiah 3:17; D&C 19:16-19; Isa 42:1-4",
+  weekScriptures: "Isa 42:1-4; Matt 11:2-6; Luke 2:11; John 7:26-27; Acts 4:26-28; Acts 17:2-3; 1 Jn 2:22; 1 Jn 5:1; 2 Ne 2:26; Mosiah 3:17; D&C 19:16-19; D&C 20:1",
   synthesis: {
     summary: "For fifty weeks, we have studied Jesus Christ from every angle scripture provides — His identity, His roles, His covenants, His suffering, His glory. This final week gathers everything into one title: Messiah. The Hebrew 'Mashiach' and the Greek 'Christos' both mean 'the Anointed One' — the one chosen, consecrated, and empowered by God to save the world. Every prophecy pointed to Him. Every type foreshadowed Him. Every covenant depended on Him. He is not one option among many; He is the One. This week is both a culmination and a beginning — the end of a year of study and the start of a deeper, lifelong relationship with the Anointed One.",
     connections: [

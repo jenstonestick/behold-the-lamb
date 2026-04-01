@@ -47,3 +47,32 @@ button {
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* ── Dark mode ── */
+[data-theme="dark"] {
+  --cream: #1A1A1A;
+  --surface: #252525;
+  --gold: #9E8E72;
+  --stone: #A89E8E;
+  --brown: #E8E0D4;
+  --star: #D49A3E;
+  --olive: #8B9168;
+  --olive-light: #2E3028;
+}
+
+[data-theme="dark"] html,
+[data-theme="dark"] body,
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background: #1A1A1A;
+  color: #E8E0D4;
+}
+
+[data-theme="dark"] textarea {
+  background: #252525;
+  color: #E8E0D4;
+}
+
+[data-theme="dark"] img {
+  opacity: 0.92;
+}

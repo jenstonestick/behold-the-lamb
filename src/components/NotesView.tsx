@@ -1,34 +1,38 @@
 import type { AppState } from '../types';
-import { WEEKS, DAYS } from '../utils';
+import type { DynWeekMeta } from '../utils';
+import { DAYS } from '../utils';
 import { content } from '../content';
 
 interface Props {
   st: AppState;
+  schedule: number[];
+  weeksMeta: DynWeekMeta[];
   goDay: (w: number, d: number) => void;
 }
 
-export default function NotesView({ st, goDay }: Props) {
-  // Collect all notes and bookmarks
-  const entries: { w: number; d: number; note: string; bm: boolean; label: string }[] = [];
+export default function NotesView({ st, schedule, weeksMeta, goDay }: Props) {
+  // Collect all notes and bookmarks, iterating by position
+  const entries: { pos: number; d: number; note: string; bm: boolean; label: string }[] = [];
 
-  for (let w = 1; w <= 50; w++) {
+  for (let pos = 1; pos <= 50; pos++) {
+    const cw = schedule[pos - 1];
     for (let d = 0; d < 7; d++) {
-      const k = `${w}-${d}`;
+      const k = `${cw}-${d}`;
       const note = st.notes[k];
       const bm = !!st.bm[k];
       if (note || bm) {
-        const c = content[w];
+        const c = content[cw];
         const label = c?.days?.[d]?.label || DAYS[d];
-        entries.push({ w, d, note: note || '', bm, label });
+        entries.push({ pos, d, note: note || '', bm, label });
       }
     }
   }
 
-  // Group by week
+  // Group by position (week)
   const byWeek = new Map<number, typeof entries>();
   for (const e of entries) {
-    if (!byWeek.has(e.w)) byWeek.set(e.w, []);
-    byWeek.get(e.w)!.push(e);
+    if (!byWeek.has(e.pos)) byWeek.set(e.pos, []);
+    byWeek.get(e.pos)!.push(e);
   }
 
   const noteCount = entries.filter(e => e.note).length;
@@ -60,25 +64,25 @@ export default function NotesView({ st, goDay }: Props) {
       </div>
 
       {/* Week groups */}
-      {[...byWeek.entries()].map(([w, items]) => {
-        const wk = WEEKS[w - 1];
+      {[...byWeek.entries()].map(([pos, items]) => {
+        const wk = weeksMeta[pos - 1];
         return (
-          <div key={w} style={{ marginBottom: '1.5rem' }}>
+          <div key={pos} style={{ marginBottom: '1.5rem' }}>
             {/* Week header */}
             <div style={{
               fontSize: 11, fontWeight: 500, color: 'var(--stone)',
               letterSpacing: '0.03em', marginBottom: 8,
               paddingBottom: 4, borderBottom: '0.5px solid var(--gold)',
             }}>
-              Week {w}: {wk.topic} · {wk.dates}
+              Week {pos}: {wk.topic} · {wk.dates}
             </div>
 
             {/* Entries */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {items.map(e => (
                 <button
-                  key={`${e.w}-${e.d}`}
-                  onClick={() => goDay(e.w, e.d)}
+                  key={`${e.pos}-${e.d}`}
+                  onClick={() => goDay(e.pos, e.d)}
                   style={{
                     background: 'var(--surface)', borderRadius: 6, padding: '10px 12px',
                     border: 'none', cursor: 'pointer', textAlign: 'left', width: '100%',

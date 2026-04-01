@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week24: WeekContent = {
   title: "Testimony of — Bearing Witness of Christ",
   subtitle: "Every dispensation is built on personal witnesses of Jesus Christ, and every disciple is invited to become one.",
-  weekScriptures: "John 1:7-8; John 5:33-39; John 20:30-31; Acts 2:32; Acts 26:22-23; 1 Cor 15:14-15; 1 Pet 5:1; Heb 11:4; Jacob 7:11; Alma 4:19-20; Alma 34:8; D&C 14:8; D&C 58:1-2; D&C 76:51-53",
+  weekScriptures: "John 1:7-8; John 5:33-39; John 20:30-31; Acts 2:32; Acts 26:22-23; 1 Cor 15:14-15; 1 Pet 5:1; Jacob 7:11; Alma 4:19-20; Alma 34:8; D&C 14:8; D&C 76:51-53; Moses 5:10-12",
   synthesis: {
     summary: "Testimony of Jesus Christ is not a genre of religious speech — it is the animating power of the gospel. The Spirit of prophecy is the testimony of Jesus. Every true prophet, from Adam to the living prophet today, is fundamentally a witness of Christ. Testimony is born by the Holy Ghost, nurtured through faithfulness, and carried by individuals who are willing to share what they have experienced. This week explores where testimony comes from, how it grows, and why bearing it is both privilege and commandment.",
     connections: [

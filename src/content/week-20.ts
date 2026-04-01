@@ -3,7 +3,7 @@ import type { WeekContent } from '../types';
 const week20: WeekContent = {
   title: "Teaching Mode — How Christ Taught",
   subtitle: "The Master Teacher used parables, questions, object lessons, and silence to reach every kind of learner.",
-  weekScriptures: "Matt 13:44-46; Luke 10:25-37; Luke 15:1-7; Luke 20:1-8; Matt 23:1-3; Mark 10:1; John 6:63; 2 Tim 3:16-17; 2 Ne 9:28-29; Alma 17:2-3; 3 Ne 11:29-30; D&C 42:12-14; D&C 68:3-4",
+  weekScriptures: "Luke 10:25-37; Luke 15:1-7; Matt 13:44-46; Matt 13:47-50; Luke 14:25-33; Mark 4:1-9; John 6:63; 2 Tim 3:16-17; D&C 42:12-14; D&C 68:3-4; Alma 17:2-3; 2 Ne 28:30; 3 Ne 26:7-9",
   synthesis: {
     summary: "Jesus Christ was not merely a teacher who happened to be divine — He was the divine Teacher whose methods perfectly matched His message. He used parables to simultaneously reveal and conceal truth, asked questions that changed the questioner, taught by example and enacted parable, and adjusted His delivery to the readiness of His hearers. His authority as Teacher rested not on credentials but on His relationship with the Father.",
     connections: [
