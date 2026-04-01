@@ -1,3 +1,4 @@
+import { useRef, useState, useCallback } from 'react';
 import type { UserSettings } from '../hooks/useSettings';
 import type { User } from 'firebase/auth';
 
@@ -13,6 +14,40 @@ interface Props {
 export default function SettingsPanel({ settings, update, user, signIn, signOut, onClose }: Props) {
   const notifSupported = 'Notification' in window;
   const notifDenied = notifSupported && Notification.permission === 'denied';
+
+  // Swipe-to-dismiss state
+  const panelRef = useRef<HTMLDivElement>(null);
+  const touchStart = useRef<{ y: number; scrollTop: number } | null>(null);
+  const [dragY, setDragY] = useState(0);
+  const [dismissing, setDismissing] = useState(false);
+
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    const el = panelRef.current;
+    if (!el) return;
+    touchStart.current = { y: e.touches[0].clientY, scrollTop: el.scrollTop };
+  }, []);
+
+  const onTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!touchStart.current) return;
+    const el = panelRef.current;
+    if (!el) return;
+    const dy = e.touches[0].clientY - touchStart.current.y;
+    // Only allow drag-down when scrolled to top
+    if (touchStart.current.scrollTop <= 0 && dy > 0) {
+      e.preventDefault();
+      setDragY(dy);
+    }
+  }, []);
+
+  const onTouchEnd = useCallback(() => {
+    if (dragY > 100) {
+      setDismissing(true);
+      setTimeout(onClose, 200);
+    } else {
+      setDragY(0);
+    }
+    touchStart.current = null;
+  }, [dragY, onClose]);
 
   const formatTime = (t: string) => {
     const [h, m] = t.split(':').map(Number);
@@ -31,20 +66,27 @@ export default function SettingsPanel({ settings, update, user, signIn, signOut,
     <div
       style={{
         position: 'fixed', inset: 0, zIndex: 1000,
-        background: 'rgba(0,0,0,0.35)',
+        background: `rgba(0,0,0,${Math.max(0, 0.35 - dragY * 0.002)})`,
         display: 'flex', alignItems: 'flex-end', justifyContent: 'center',
+        transition: dragY > 0 ? 'none' : 'background 0.2s ease-out',
       }}
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
       <div
+        ref={panelRef}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
         style={{
           width: '100%', maxWidth: 640,
           background: 'var(--cream)',
           borderRadius: '20px 20px 0 0',
           padding: '1.5rem 1.5rem 2.5rem',
           boxShadow: '0 -4px 30px rgba(0,0,0,0.12)',
-          animation: 'slideUp 0.25s ease-out',
+          animation: dismissing ? 'none' : 'slideUp 0.25s ease-out',
           maxHeight: '85vh', overflowY: 'auto',
+          transform: `translateY(${dismissing ? '100%' : `${dragY}px`})`,
+          transition: dragY > 0 ? 'none' : 'transform 0.2s ease-out',
         }}
       >
         {/* Handle bar */}
